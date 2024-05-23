@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +7,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  constructor(public languageService: LanguageService) {}
+
   @ViewChild('card')
   cardRef!: ElementRef;
 
