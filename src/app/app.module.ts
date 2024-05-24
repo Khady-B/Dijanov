@@ -14,6 +14,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LanguageService } from './services/language.service';
+import { HomeComponent } from './components/home/home.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,7 +28,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     LogoComponent,
     CardComponent,
-    ServicesComponent
+    ServicesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

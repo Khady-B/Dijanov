@@ -6,13 +6,6 @@
 <div class="toolbar" role="banner">
   
 </div>
-<div>
-  <select #langSelect (change)="languageService.switchLanguage(langSelect.value)">
-    <option value="fr" [selected]="languageService.getCurrentLanguage() === 'fr'">Français</option>
-    <option value="en" [selected]="languageService.getCurrentLanguage() === 'en'">English</option>
-  </select>
-</div>
-
 
 
 <div class="content" role="main">
@@ -32,8 +25,7 @@
 </div>
 
 <app-navbar></app-navbar>
-<app-logo></app-logo>
-<app-card></app-card>
+
 
 <!-- <app-homepage></app-homepage>-->
 <router-outlet></router-outlet>

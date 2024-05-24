@@ -1,13 +1,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="flip">
-  <div class = "dijanov">
+  <div class="dijanov">
     <img id="logo" src="/assets/img/Dijanov_fb.png" alt="dijanov" />
   </div>
-  <div class = "slogan">
-    <p>Bienvenue</p>
-      <a class="navbar-brand" href="#" routerLink="/">
-        Voir plus ...
-      </a>
+  <div class="slogan">
+    <p>
+      {{languageService.translate('Recherche')}}<br/>
+      {{languageService.translate('Aspiration')}}<br/><br/>
+      {{languageService.translate('Stop_recherche')}}<br/><br/>
+      {{languageService.translate('Slogan')}}
+    </p>
+    <a class="navbar-brand" href="#" routerLink="/home">
+      {{languageService.translate('Voir_plus')}} ...
+    </a>
 
   </div>
 </div>

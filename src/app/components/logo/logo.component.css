@@ -104,19 +104,20 @@
     border-radius: 10px;
   }
 
-  .flip > .dijanov p {
-    font-size: 0.9125rem;
-    line-height: 160%;
-    justify-content: center;
-    align-items: center;
+  .flip > .slogan {
+    background-color: #000000ba;
   }
 
   .flip > .slogan p {
     display: flex;
     position: relative;
     font-size: large;
-    font-weight: bolde;
+    /*font-weight:lighter;*/
     color: #ffffff;
+    width: 800px;
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
   }
 
   .text-shadow {

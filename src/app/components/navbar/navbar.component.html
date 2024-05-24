@@ -14,7 +14,7 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard">{{languageService.translate('Accueil')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/home">{{languageService.translate('Accueil')}}</a>
 
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" routerLink="/services">{{languageService.translate('Services')}}</a>
@@ -27,6 +27,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" routerLink="/contact">{{languageService.translate('Contact')}}</a>
+        </li>
+        <li class="nav-item" id="language">
+          <select #langSelect (change)="languageService.switchLanguage(langSelect.value)">
+            <option value="fr" [selected]="languageService.getCurrentLanguage() === 'fr'">{{languageService.translate('Français')}}</option>
+            <option value="en" [selected]="languageService.getCurrentLanguage() === 'en'">{{languageService.translate('Anglais')}}</option>
+          </select>
         </li>
       </ul>
     </div>
