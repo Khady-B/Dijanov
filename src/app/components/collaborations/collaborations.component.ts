@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  selector: 'app-collaborations',
+  templateUrl: './collaborations.component.html',
+  styleUrls: ['./collaborations.component.css']
 })
-export class ServicesComponent implements OnInit {
-
+export class CollaborationsComponent {
   services: any[] = [];
 
   constructor(private dataService: DataService) { }
@@ -17,5 +16,4 @@ export class ServicesComponent implements OnInit {
       this.services = response;
     });
   }
-  
 }

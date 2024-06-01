@@ -14,24 +14,24 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/home">{{languageService.translate('Accueil')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/home">{{'Accueil' | translate}}</a>
 
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/services">{{languageService.translate('Services')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/services">{{'Services' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/colabs">{{languageService.translate('Collaborations')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/collaborations">{{'Collaborations' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/about">{{languageService.translate('À_propos')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/about">{{'À_propos' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/contact">{{languageService.translate('Contact')}}</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/contact">{{'Contact' | translate}}</a>
         </li>
         <li class="nav-item" id="language">
           <select #langSelect (change)="languageService.switchLanguage(langSelect.value)">
-            <option value="fr" [selected]="languageService.getCurrentLanguage() === 'fr'">{{languageService.translate('Français')}}</option>
-            <option value="en" [selected]="languageService.getCurrentLanguage() === 'en'">{{languageService.translate('Anglais')}}</option>
+            <option value="en" [selected]="languageService.currentLanguage === 'en'">English</option>
+            <option value="fr" [selected]="languageService.currentLanguage === 'fr'">Français</option>
           </select>
         </li>
       </ul>

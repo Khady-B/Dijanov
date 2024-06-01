@@ -8,5 +8,5 @@ import { LanguageService } from './services/language.service';
 })
 export class AppComponent {
   title = 'dijanov';
-  constructor(public languageService: LanguageService) {}
+  constructor(private languageService: LanguageService) {}
 }

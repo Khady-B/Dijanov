@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Création de sites web",
+        "picture": "./assets/img/service_sites_web.jpg",
+        "description": "Nous concevons des sites web sur mesure qui sont à la fois esthétiques et fonctionnels. Qu'il s'agisse d'un site vitrine, d'un blog, ou d'une boutique en ligne, nous adaptons chaque projet à vos besoins spécifiques, en mettant l'accent sur l'ergonomie."
+    },
+    {
+        "id": 2,
+        "title": "Développement de jeux",
+        "picture": "./assets/img/service_jeux.jpg",
+        "description": "Nous développons des jeux vidéo captivants, de la conception initiale à la mise en œuvre finale. Nos services incluent la création de jeux pour diverses plateformes (PC, mobile, console) en utilisant des technologies de pointe pour garantir une expérience immersive et engageante."
+    },
+    {
+        "id": 3,
+        "title": "Logiciels sur mesure",
+        "picture": "./assets/img/service_logiciel.png",
+        "description": "Nous concevons des logiciels personnalisés pour répondre précisément aux besoins de votre entreprise. Que vous ayez besoin d'une application de gestion, d'un outil de productivité ou d'un logiciel de suivi des clients, nous créons des solutions robustes et évolutives adaptées à vos exigences spécifiques."
+    },
+    {
+        "id": 4,
+        "title": "Design de logos",
+        "picture": "./assets/img/service_logos.jpg",
+        "description": "Nous créons des logos uniques et mémorables qui reflètent l'identité et les valeurs de votre marque. Notre processus de design inclut des recherches approfondies et des concepts innovants pour vous fournir un logo qui se démarque et renforce votre picture de marque."
+    },
+    {
+        "id": 5,
+        "title": "Formation",
+        "picture": "./assets/img/service_formation.jpg",
+        "description": "Nous offrons des formations spécialisées pour vous aider à maîtriser les compétences numériques nécessaires à votre réussite. Nos formations couvrent divers domaines, allant du développement web à la gestion de projets informatiques."
+    }
+]

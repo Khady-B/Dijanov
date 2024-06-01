@@ -15,10 +15,12 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LanguageService } from './services/language.service';
 import { HomeComponent } from './components/home/home.component';
+import { DataService } from './services/data.service';
+import { CollaborationsComponent } from './components/collaborations/collaborations.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/datas/', '.json');
 }
 
 @NgModule({
@@ -29,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LogoComponent,
     CardComponent,
     ServicesComponent,
-    HomeComponent
+    HomeComponent,
+    CollaborationsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     MatCardModule
   ],
-  providers: [LanguageService],
+  providers: [LanguageService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
