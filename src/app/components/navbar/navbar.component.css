@@ -1,5 +1,13 @@
 @media screen and (max-width: 3000px) {
 
+  #navbar {
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    margin-bottom: 8%;
+    animation: slidein 2s;
+  }
+
   nav {
     word-wrap: break-word;
     font-size: 20px;

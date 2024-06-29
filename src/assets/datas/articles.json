@@ -1,0 +1,17 @@
+[
+    { 
+        "title": "Presentation Example",
+        "url": "assets/presentations/example.pptx",
+        "type": "pptx"
+    },
+    { 
+        "title": "Image Example",
+        "url": "assets/images/example.jpg",
+        "type": "image"
+    },
+    { 
+        "title": "PDF Example",
+        "url": "assets/documents/example.pdf",
+        "type": "pdf"
+    }
+]

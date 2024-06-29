@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe((response) => {
+    this.dataService.getDataServices().subscribe((response) => {
       this.services = response;
     });
   }

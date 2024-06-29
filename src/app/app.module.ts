@@ -17,6 +17,7 @@ import { LanguageService } from './services/language.service';
 import { HomeComponent } from './components/home/home.component';
 import { DataService } from './services/data.service';
 import { CollaborationsComponent } from './components/collaborations/collaborations.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardComponent,
     ServicesComponent,
     HomeComponent,
-    CollaborationsComponent
+    CollaborationsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

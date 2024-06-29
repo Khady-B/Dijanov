@@ -20,19 +20,57 @@
     }
 
     img {
-        max-width: 600px;
-        max-height: 600px;
+        min-width: 200px;
+        min-height: 200px;
     }
 
-    #service {
+    
+    #collaboration {
         margin: 2%;
         justify-content: center;
+        display: table-cell;
     }
+
+    #collaboration.card {
+        width: auto;
+        height: auto;
+    }
+
+    .card {
+        margin: 2%;
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+        overflow-x: auto;
+        background-color: white;
+        display: inline-table;
+        transition: 0.3s;
+        flex-direction:column;
+        border-radius: 10px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+        border: 1px solid #5E01FD;
+        padding: 5%;
+    }
+
+    .card-header {
+        position: relative;
+        display: flex;
+        min-height: 600px;
+        flex-shrink: 0;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .card-header * {
+        transition: 0.3s;
+    }
+
     
     .card-cover {
         width: 100%;
         height: 100%;
         position: absolute;
+        height: 100%;
         top: -20%;
         left: 0;
         will-change: top;
@@ -44,43 +82,177 @@
     }
 
     .card-avatar {
+        min-width: 22%;
+        min-height: 22%;
+        max-width: 50%;
+        max-height: 50%;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin: auto;
+        overflow-y: auto;
         position: relative;
-        right: -50%;
+        background-position: center;
+        display: flex;
     }
 
     .card-title {
-        position: absolute;
-        font-weight: bold;
-        color: white;
+        position: relative;
+        float: top;
+        font-size: 22px;
+        font-weight: bolder;
         text-align: center;
-        text-shadow: 2px 2px 20px rgb(0, 0, 0);
-        right: 80%;
-        transform: translateX(80%) translateY(80%);
+        white-space: nowrap;
+        transform: translateX(-50%) translateY(10px);
+        left: 50%;
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        color: #000000;
+        border-radius: 8px;
     }
-    
-    .card-subtitle {
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        text-shadow: 2px 2px 20px rgb(0, 0, 0);
-        margin-bottom: 10%;
+
+    .card-main {
+        position: relative;
+        flex: 1;
+        display: flex;
+        padding-top: 10px;
+        flex-direction: row;
     }
 
     .card-subtitle {
-        color: white;
-        text-align: center;
-        left: 0;
-        text-shadow: 2px 2px 20px rgb(0, 0, 0);
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: 8px;
     }
 
     .card-content {
-        position: absolute;
-        color: white;
-        text-align: center;
-        font-size: large;
-        text-shadow: 2px 2px 20px rgb(0, 0, 0);
-        right: 80%;
-        transform: translateX(60%) translateY(80%);
-        width: 500px;
+        margin: 2%;
+        padding: 2%;
+        position: relative;
+        color: black;
+        background-color: #ffffff2b;
+        border-radius: 10px;
     }
+
+
+    .card-desc {
+        color: #000000;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 400;
+        font-family: "DM Sans", sans-serif;
+        font-size: large;
+        
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+    }
+
+
+    hr {
+        width: 100%;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+
+    #title {
+        margin: 2%;
+        margin-top: 10%;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 994px) {
+        .card-avatar[_ngcontent-ng-c1940327748] {
+            max-width: 80%;
+            max-height: 80%;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            object-position: center;
+            object-fit: cover;
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+
+        .card-title {
+            position: relative;
+            float: top;
+            font-size: 22px;
+            font-weight: bolder;
+            text-align: center;
+            white-space: nowrap;
+            transform: translateX(-50%) translateY(10px);
+            left: 50%;
+            text-shadow: 2px 2px 20px rgb(255, 255, 255);
+            color: #000000;
+            border-radius: 8px;
+        }
+
+        .card-subtitle {
+            font-size: large;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #title {
+            margin: 2%;
+            margin-top: 15%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #title {
+            margin: 2%;
+            margin-top: 18%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        #title {
+            margin: 2%;
+            margin-top: 28%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 350) {
+        #title {
+            margin: 2%;
+            margin-top: 30%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    ul {
+        padding-top: 2%;
+        padding-left: 5%;
+    }
+    
 }

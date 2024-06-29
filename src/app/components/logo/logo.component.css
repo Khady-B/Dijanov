@@ -4,7 +4,7 @@
     border: 5px solid #5E01FD;
     border-style: outset;
     border-radius: 5%;
-    animation: slidein 2s;
+    /*animation: slidein 2s;*/
     width: 100%;
   }
 
@@ -29,6 +29,7 @@
   /* Base */
   .flip {
     position: relative;
+    margin-top: 8%;
   }
 
   .flip > .dijanov,

@@ -8,11 +8,21 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private jsonUrl = './assets/datas/services.json';
+  private servicesUrl = './assets/datas/services.json';
+  private collaborationsUrl = './assets/datas/collaborations.json';
+  private articlesUrl = './assets/datas/articles.json';
 
   constructor(private http: HttpClient) { }
 
-  getData(): Observable<any[]> {
-    return this.http.get<any[]>(this.jsonUrl);
+  getDataServices(): Observable<any[]> {
+    return this.http.get<any[]>(this.servicesUrl);
+  }
+  
+  getDataCollaborations(): Observable<any[]> {
+    return this.http.get<any[]>(this.collaborationsUrl);
+  }
+
+  getDataArticles(): Observable<any[]> {
+    return this.http.get<any[]>(this.articlesUrl);
   }
 }

@@ -1,0 +1,81 @@
+<div class="container-md">
+    <div class="about-container">
+        <h1 id="title">À propos</h1>
+        <hr>
+        <section>
+            <h2>Notre Mission</h2>
+            <p>Chez Dijanov, notre mission est de fournir des services numériques sur mesure pour transformer vos idées
+                en
+                réalité numérique. Nous combinons innovation, technologie et expertise pour offrir des solutions
+                adaptées à
+                vos besoins uniques.</p>
+        </section>
+
+        <section>
+            <h2>Notre Vision</h2>
+            <p>Nous croyons en un avenir où la technologie améliore la vie quotidienne et aide les entreprises à
+                atteindre
+                leurs objectifs. Nous nous efforçons d'être à la pointe de l'innovation numérique, en offrant des
+                solutions
+                qui simplifient, optimisent et transforment.</p>
+        </section>
+
+        <section>
+            <h2>Nos Valeurs</h2>
+            <ul>
+                <li><strong>Innovation :</strong> Toujours à la recherche de nouvelles idées pour vous offrir le
+                    meilleur de
+                    la technologie.</li>
+                <li><strong>Qualité :</strong> Des solutions fiables et performantes, adaptées à vos besoins
+                    spécifiques.
+                </li>
+                <li><strong>Engagement :</strong> Une équipe dévouée et passionnée, à votre service.</li>
+                <li><strong>Collaboration :</strong> Travailler main dans la main avec nos clients pour garantir leur
+                    satisfaction.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Notre Équipe</h2>
+            <p>Notre équipe est composée de professionnels passionnés et expérimentés dans le domaine des technologies
+                numériques. Nous mettons notre expertise à votre disposition pour vous accompagner dans vos projets, de
+                la
+                conception à la réalisation.</p>
+        </section>
+
+        <section>
+            <h2>Notre Fondatrice</h2>
+            <p><strong>Khady BA</strong> est une développeuse fullstack diplômée d'un master en Génie de
+                l'Informatique
+                Logicielle et cheffe de projet informatique diplômée d'un certificat en gestion de projet. Elle est
+                extravertie, persuasif, pragmatique, structuré et serein. Elle valorise l'efficacité et la
+                collaboration, et
+                est dévouée à offrir des solutions de haute qualité à ses clients.</p>
+        </section>
+
+        <section>
+            <h2>Nos Services</h2>
+            <p>Nous offrons une gamme de services numériques sur mesure, y compris la création de sites internet, le
+                développement de jeux, la conception de logiciels, le design de logos et la formation. Découvrez comment
+                nous pouvons vous aider à concrétiser vos idées en explorant nos services.</p>
+        </section>
+    </div>
+    <div class="articles-container">
+        <h1 id="title">Articles</h1>
+        <hr>
+        <div *ngFor="let article of articles" class="article">
+            <h2>{{ article.title }}</h2>
+            <div *ngIf="article.type === 'pdf'">
+                <object [data]="article.url" type="application/pdf" width="600" height="400">
+                    <a [href]="article.url" target="_blank">View PDF</a>
+                </object>
+            </div>
+            <div *ngIf="article.type === 'image'">
+                <img [src]="article.url" alt="{{ article.title }}" />
+            </div>
+            <div *ngIf="article.type === 'pptx'">
+                <a [href]="article.url" target="_blank">Download Presentation</a>
+            </div>
+        </div>
+    </div>
+</div>

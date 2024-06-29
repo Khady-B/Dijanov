@@ -1,23 +1,25 @@
 <div class="container-md">
-    <div class="mb-4">
-      <h2 id="title">Services</h2>
-      <hr>
-      <div id="services" class="card" data-state="#about">
-        <div id="service" class="image border rounded-3 overflow-hidden" *ngFor="let service of services">
-          <div class="card-header">
-            <div class="card-cover" style="background-image: url('{{service?.picture}}')"></div>
-            <img class="card-avatar" src="{{service?.picture}}" alt="avatar" />
-            <h1 class="card-fullname">{{service?.title}}</h1>
-          </div>
-          <div class="card-main">
-            <div class="card-section is-active" id="about">
-              <div class="card-content">
-                <div class="card-subtitle">ABOUT</div>
-                <p class="card-desc">{{service?.description}}</p>
-              </div>
-            </div>
+  <div class="mb-4">
+    <h2 id="title">Services</h2>
+    <hr>
+    <div id="services" class="card" data-state="#about">
+      <div id="service" class="image border rounded-3 overflow-hidden" *ngFor="let service of services">
+        <div class="card">
+          <div class="card-cover" style="background-image: url('{{service?.picture}}')"></div>
+          <img class="card-avatar" src="{{service?.picture}}" alt="avatar" />
+          <h1 class="card-title">{{service?.title | translate}}</h1>
+          <div class="card-content">
+              <h2 class="card-subtitle"></h2>
+              <p class="card-desc">{{service?.description  | translate}}</p>
+              <ul class="card-desc" *ngIf="service?.id == 5">
+                <li>{{'Formation_1'  | translate}}</li>
+                <li>{{'Formation_2'  | translate}}</li>
+                <li>{{'Formation_3'  | translate}}</li>
+                <li>{{'Formation_4'  | translate}}</li>
+              </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

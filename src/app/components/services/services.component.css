@@ -20,8 +20,8 @@
     }
 
     img {
-        max-width: 600px;
-        max-height: 600px;
+        min-width: 200px;
+        min-height: 200px;
     }
 
     #service {
@@ -35,37 +35,19 @@
     }
 
     .card {
-        width: 100%;
-        margin: auto;
+        margin: 2%;
         overflow-y: auto;
         position: relative;
         z-index: 1;
-        overflow-x: hidden;
+        overflow-x: auto;
         background-color: white;
-        display: inline-block;
+        display: inline-table;
         transition: 0.3s;
-        flex-direction: column;
+        flex-direction:column;
         border-radius: 10px;
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
-    }
+        border: 1px solid #5E01FD;
 
-    .card.is-active .card-cover {
-        min-height: 400px;
-        top: -50px;
-    }
-
-    .card.is-active .card-avatar {
-        transform: none;
-        left: 20px;
-        width: 50px;
-        height: 50px;
-        bottom: 10px;
-    }
-
-
-    .card.is-active .card-fullname {
-        bottom: 18px;
-        font-size: 19px;
     }
 
     .card-header {
@@ -81,11 +63,12 @@
         transition: 0.3s;
     }
 
+    
     .card-cover {
         width: 100%;
         height: 100%;
         position: absolute;
-        height: 160px;
+        height: 100%;
         top: -20%;
         left: 0;
         will-change: top;
@@ -97,30 +80,35 @@
     }
 
     .card-avatar {
-        max-width: 100%;
-        max-height: 100%;
+        min-width: 22%;
+        min-height: 22%;
+        max-width: 50%;
+        max-height: 50%;
         box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 20%;
+        border-radius: 12px;
         -o-object-position: center;
         object-position: center;
         -o-object-fit: cover;
         object-fit: cover;
-        position: absolute;
-        bottom: 0;
-        float: left;
+        margin: auto;
+        overflow-y: auto;
+        position: relative;
+        background-position: center;
+        display: flex;
     }
 
-    .card-fullname {
-        position: absolute;
-        float: right;
+    .card-title {
+        position: relative;
+        float: top;
         font-size: 22px;
-        font-weight: 700;
+        font-weight: bolder;
         text-align: center;
         white-space: nowrap;
         transform: translateX(-50%) translateY(10px);
         left: 50%;
-        padding: 10px;
-        margin-left: 25%;
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        color: #000000;
+        border-radius: 8px;
     }
 
     .card-main {
@@ -132,32 +120,30 @@
     }
 
     .card-subtitle {
-        font-weight: 700;
-        font-size: 13px;
+        font-size: large;
+        font-weight: bold;
         margin-bottom: 8px;
     }
 
     .card-content {
-        padding: 20px;
+        margin: 2%;
+        padding: 2%;
+        position: relative;
+        color: black;
+        background-color: #ffffff2b;
+        border-radius: 10px;
     }
 
-    p {
-        width: auto;
-        height: auto;
-        border: 1px;
-        padding-left: -20%;
-        /*white-space: nowrap;*/
-        overflow: hidden;
-    }
 
     .card-desc {
-        /*line-height: 1.8;*/
-        color: #636b6f;
+        color: #000000;
         font-size: 14px;
         margin: 0;
         font-weight: 400;
         font-family: "DM Sans", sans-serif;
-        /*text-overflow: ellipsis;*/
+        font-size: large;
+        
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
     }
 
 
@@ -167,27 +153,104 @@
         text-align: center;
     }
 
-
-
     #title {
         margin: 2%;
+        margin-top: 10%;
         text-align: center;
         width: 100%;
-        background-image: linear-gradient(-225deg,
-                black 10%,
-                #025CFD 29%,
-                #8FD1C5 67%,
-                #ffe88b 100%);
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 5s linear infinite;
+        height: 100%;
         display: inline-block;
-        font-size: 50px;
+        font-size: 40px;
     }
+
+    @media screen and (max-width: 994px) {
+        .card-avatar[_ngcontent-ng-c1940327748] {
+            max-width: 80%;
+            max-height: 80%;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            object-position: center;
+            object-fit: cover;
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+
+        .card-title {
+            position: relative;
+            float: top;
+            font-size: 22px;
+            font-weight: bolder;
+            text-align: center;
+            white-space: nowrap;
+            transform: translateX(-50%) translateY(10px);
+            left: 50%;
+            text-shadow: 2px 2px 20px rgb(255, 255, 255);
+            color: #000000;
+            border-radius: 8px;
+        }
+
+        .card-subtitle {
+            font-size: large;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #title {
+            margin: 2%;
+            margin-top: 15%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #title {
+            margin: 2%;
+            margin-top: 18%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        #title {
+            margin: 2%;
+            margin-top: 28%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 350) {
+        #title {
+            margin: 2%;
+            margin-top: 30%;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    ul {
+        padding-top: 2%;
+        padding-left: 5%;
+    }
+    
 }
