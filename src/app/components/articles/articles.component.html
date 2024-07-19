@@ -1,0 +1,31 @@
+<div class="container-md">
+    <div class="mb-4">
+        <h1 id="title">Articles</h1>
+        <hr>
+        <div id="articles-container">
+            <div class="articles" *ngFor="let article of articles" class="article">
+                <h2 id="h2_center">{{article?.title | translate}}</h2>
+                <section>
+                    <pre>
+                        {{article?.description | translate}}
+                    </pre>
+                </section>
+                <div id="article_content" *ngIf="article.type === 'pdf'">
+                    <object [data]="article.url" type="application/pdf" width="600" height="400">
+                        <a [href]="article.url" target="_blank">View PDF</a>
+                    </object>
+                </div>
+                <div id="article_content" *ngIf="article.type === 'image'">
+                    <img [src]="article.url" alt="{{article.title | translate}}" />
+                </div>
+                <div id="article_content" *ngIf="article.type === 'pptx'">
+                    <img [src]="article.url" alt="{{article.title | translate}}" />
+                    <a [href]="article.url" target="_blank">Download Presentation</a>
+                </div>
+                <div id="article_content" *ngIf="article.type === 'video'">
+                    <video [src]="article.url" controls width="100%"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

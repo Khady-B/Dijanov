@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,10 @@ import { HomeComponent } from './components/home/home.component';
 import { DataService } from './services/data.service';
 import { CollaborationsComponent } from './components/collaborations/collaborations.component';
 import { AboutComponent } from './components/about/about.component';
+import { NgxMasonryModule } from 'ngx-masonry';
+import { HeadingComponent } from './components/heading/heading.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { SectionsComponent } from './components/sections/sections.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -34,7 +38,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServicesComponent,
     HomeComponent,
     CollaborationsComponent,
-    AboutComponent
+    AboutComponent,
+    HeadingComponent,
+    ArticlesComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,9 +55,11 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    MatCardModule
+    MatCardModule,
+    NgxMasonryModule
   ],
   providers: [LanguageService, DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

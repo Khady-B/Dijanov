@@ -1,19 +1,13 @@
-import { Component } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
-  articles: any[] = [];
-
-  constructor(private dataService: DataService) { }
-
+export class AboutComponent implements OnInit {
   ngOnInit(): void {
-    this.dataService.getDataArticles().subscribe((response) => {
-      this.articles = response;
-    });
+    throw new Error('Method not implemented.');
   }
+
 }

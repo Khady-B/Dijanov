@@ -3,6 +3,7 @@
     "Anglais": "English",
     "Accueil": "Home",
     "Services": "Services",
+    "Rubriques": "Sections",
     "Collaborations": "Collaborations",
     "À_propos": "About us",
     "Contact": "Contact",
@@ -35,5 +36,9 @@
     "collaboration_description_4": "Description 4",
     "collaboration_title_5": "Company 5",
     "collaboration_description_5": "Description 5",
-    "ANOTHER_DESCRIPTION": "This is another example."
+    "ANOTHER_DESCRIPTION": "This is another example.",
+    "article_title_1": "Developer beyond code",
+    "article_description_1": "\n🚀 Developer Beyond Code 🚀 \nWelcome to my professional world, where programming is not just a line of code, but a multidimensional adventure! 👩🏽‍💻✨ \n\nIn this fascinating universe, I want to share with you the different types of developers who shape the digital landscape \n\nFrom the creativity of the frontend developer to the robustness of the backend, including the ingenuity of mobile developers and much more. others, each profile brings its unique touch to the art of development \n\nJoin me in this exploration where I share not only the nuances of these profiles, but also some of the technologies used 🌟 \n\n#DevWorld #WomenInDev. #TechInnovation \n#IAandTech #Digital #Programming #HelloWorld",
+    "article_title_2": "Choose the right programming language",
+    "article_description_2": "\n🚀 Galactic exploration of programming languages: how to choose the right programming language 🚀 \n\nI am often asked about different programming languages ​​and how to choose which one to use. How to know which is the best suitable for a project? Which language should I train in? 🤔 \n\nTo answer these many questions, I invite you to a galactic exploration of programming languages ​​🌌✨ Are you ready? \n\nThis excursion will guide you through a galaxy of languages, helping you choose the code star that best suits your needs and goals.\n\n#Programmation #Développement #Technologie #Carrière #Apprentissage #LangagesDeProgrammation"
 }

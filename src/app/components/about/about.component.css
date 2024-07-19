@@ -1,5 +1,12 @@
 @media screen and (max-width: 3000px) {
 
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
     .about-container {
         margin: 0 auto;
         padding: 20px;
@@ -9,12 +16,12 @@
     h1 {
         text-align: center;
         margin-bottom: 20px;
-        color: #5E01FD;
     }
 
     h2 {
         color: black;
-        margin-top: 20px;
+        margin-top: 5%;
+        margin-bottom: 2%;
     }
 
     .about-container p, .about-container ul {
@@ -31,7 +38,6 @@
     }
 
     #title {
-        margin: 2%;
         margin-top: 10%;
         text-align: center;
         width: 100%;
@@ -42,7 +48,70 @@
 
     hr {
         width: 100%;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
         text-align: center;
     }
+
+    #me {
+        float: right;
+        position: relative;
+        margin: 5%;
+        width: 300px;
+        height: 300px;
+    }
+
+    #pp {
+        float: left;
+        position: relative;
+        margin: 5%;
+        width: 300px;
+        height: 300px;
+    }
+
+    #h2_center {
+        width: 100%;
+        text-align: center;
+    }
+
+    pre {
+        width: 100%; /* Définissez la largeur souhaitée */
+        white-space: pre-wrap; /* Forcer le retour à la ligne */
+        word-wrap: break-word; /* Pour assurer la compatibilité */
+        /*background-color: #f0f0f0; /* Optionnel : couleur de fond pour mieux voir la zone */
+        padding: 10px; /* Optionnel : ajout de padding pour l'espacement */
+        /*border: 1px solid #ccc;  Optionnel : ajout de bordure */
+    }
+
+    #article_content {
+        width: 100%;
+        white-space: pre-wrap;
+        position: relative;
+    }
+
+    video {
+        max-width: 100%; /* Vidéo ajustée à la taille du conteneur */
+        height: auto; /* Maintient le ratio d'aspect */
+        display: block; /* Assure que la vidéo prenne toute la largeur du conteneur */
+    }
+
+    .articles-container {
+        /* grid-template-columns: repeat(2, 1fr); */
+        position: relative;
+    }
+    
+    .article {
+        width: fit-content;
+        margin: 2%;
+        border-radius: 10px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+        border: 1px solid #5E01FD;
+        position: relative;
+        display: inline-block;  /*Permet à la largeur de s'ajuster au contenu */
+        flex-direction: column; 
+        max-width: 45%; /* Limite maximale de la largeur */
+        padding: 1%;
+        background-color: #f0f0f0; /* Optionnel : couleur de fond pour mieux voir la zone */
+        vertical-align: top;
+    }
+
 }
