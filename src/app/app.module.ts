@@ -22,6 +22,9 @@ import { NgxMasonryModule } from 'ngx-masonry';
 import { HeadingComponent } from './components/heading/heading.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { SectionsComponent } from './components/sections/sections.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactService } from './services/contact.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -41,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutComponent,
     HeadingComponent,
     ArticlesComponent,
-    SectionsComponent
+    SectionsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +60,10 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     MatCardModule,
-    NgxMasonryModule
+    NgxMasonryModule,
+    ReactiveFormsModule
   ],
-  providers: [LanguageService, DataService],
+  providers: [LanguageService, DataService, ContactService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

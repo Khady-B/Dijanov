@@ -6,6 +6,7 @@ import { CollaborationsComponent } from './components/collaborations/collaborati
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { SectionsComponent } from './components/sections/sections.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'collaborations', component: CollaborationsComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'sections', component: SectionsComponent }
+  { path: 'sections', component: SectionsComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
