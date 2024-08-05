@@ -25,6 +25,15 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
+      const formData = {
+        lastName: this.contactForm.value.lastName,
+        firstName: this.contactForm.value.firstName,
+        email: this.contactForm.value.email,
+        tel: this.contactForm.value.tel,
+        service: this.contactForm.value.service,
+        message: this.contactForm.value.message,
+        _subject: '[Dijanov] ' + this.contactForm.value.service // Ajout du sujet ici
+      };
       this.contactService.sendContactForm(this.contactForm.value).subscribe(
         response => {
           this.successMessage = 'Votre message a été envoyé avec succès.';
