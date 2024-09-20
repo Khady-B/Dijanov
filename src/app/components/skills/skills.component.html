@@ -2,9 +2,14 @@
     <div class="mb-4">
         <h1 id="title">{{'Compétences' | translate}}</h1>
         <hr>
-        <div id="skills" class="card" data-state="#about">
-            <div id="skill" class="image border rounded-3 overflow-hidden" *ngFor="let skill of skills">
-                <div class="card">
+        <div id="skills" class="card" data-state="#about" *ngFor="let item of skills">
+            <h2 id="item">{{item.type | translate}}</h2>
+            <div id="skill" class="image border rounded-3 overflow-hidden" *ngFor="let skill of item.values">
+                <figure>
+                    <img class="card" src="{{skill?.picture}}" alt="avatar" />
+                    <figcaption class="card-title">{{skill?.title | translate}}</figcaption>
+                </figure>
+                <!--<div class="card">
                     <div class="card-cover" style="background-image: url('{{skill?.picture}}')"></div>
                     <img class="card-avatar" src="{{skill?.picture}}" alt="avatar" />
                     <h1 class="card-title">{{skill?.title | translate}}</h1>
@@ -12,7 +17,7 @@
                         <h2 class="card-subtitle"></h2>
                         <p class="card-desc">{{skill?.type | translate}}</p>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

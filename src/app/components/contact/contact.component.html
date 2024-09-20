@@ -1,6 +1,6 @@
 <div class="container-md">
     <div class="mb-4">
-      <div class="contact-container">
+      <div class="contact-container" style="background-image: url(assets/img/Dijanov_logo_cover_2.png);">
         <h1 id="title">Contact</h1>
         <hr>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
@@ -8,31 +8,40 @@
           <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
           <div class="form-group mb-2">
             <input type="text" class="form-control" id="lastName" name="lastName"
-            placeholder="Nom*" required maxlength="255" formControlName="lastName" />
+            placeholder="{{'Nom' | translate}} *" required maxlength="255" formControlName="lastName" />
   
             <input type="text" class="form-control" id="firstName" name="firstName"
-            placeholder="Prénom*" required maxlength="255" formControlName="firstName" />
+            placeholder="{{'Prénom' | translate}} *" required maxlength="255" formControlName="firstName" />
           </div>
           <div class="form-group mb-2">
             <input type="email" class="form-control" id="email" name="email"
-            placeholder="Email*" required maxlength="255" formControlName="email" />
+            placeholder="Email *" required maxlength="255" formControlName="email" />
   
             <input type="tel" class="form-control" id="tel" name="tel"
-            placeholder="Téléphone" formControlName="tel" />
+            placeholder="{{'Numéro de téléphone' | translate}}" formControlName="tel" />
           </div>
-          <div class="form-group">
-            <label for="service">Sujet*</label>
+          <div class="form-group  mb-2">
+            <label for="service">{{'Sujet' | translate}} *</label>
             <select name="service" id="service" class="form-control" formControlName="service" required>
-              <option value="web_site">Création d'un site web</option>
-              <option value="game">Développement d'un jeu</option>
-              <option value="logiciel">Développement d'un logiciel sur mesure</option>
-              <option value="logo">Création d'un logo</option>
-              <option value="formation">Formation</option>
-              <option value="other">Autre</option>
+              <option value="web_site">{{'service_title_1' | translate}}</option>
+              <option value="game">{{'service_title_2' | translate}}</option>
+              <option value="logiciel">{{'service_title_3' | translate}}</option>
+              <option value="logo">{{'service_title_4' | translate}}</option>
+              <option value="formation">{{'service_title_5' | translate}}</option>
+              <option value="other">{{'Autre' | translate}}</option>
             </select>
           </div>
+          <div class="form-group  mb-2">
+            <label for="file" >Documents </label>
+            <label class="files" for="file" >{{'Choix' | translate}}</label>
+            <input type="file" id="file" name="file" title="{{'Choix' | translate}}"
+            accept=".pdf,.doc,.docx,.jpg,.png" multiple (change)="onFileChange($event)">
+            <div class="preview">
+              <p>{{'Choix_desc' | translate}}</p>
+            </div>
+          </div>
           <div class="form-group mb-2">
-            <label for="message">Message*</label>
+            <label for="message">Message *</label>
             <textarea class="form-control" id="message" name="message" formControlName="message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Envoyer</button>

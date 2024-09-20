@@ -1,10 +1,10 @@
 <div class="container-md">
   <div class="mb-4">
-    <h2 id="title">Services</h2>
+    <h1 id="title">Services</h1>
     <hr>
-    <div id="services" class="card" data-state="#about">
+    <div id="services" class="cards" data-state="#about">
       <div id="service" class="image border rounded-3 overflow-hidden" *ngFor="let service of services">
-        <div class="card">
+        <div class="card" id="card">
           <div class="card-cover" style="background-image: url('{{service?.picture}}')"></div>
           <img class="card-avatar" src="{{service?.picture}}" alt="avatar" />
           <h1 class="card-title">{{service?.title | translate}}</h1>
@@ -23,3 +23,4 @@
     </div>
   </div>
 </div>
+<app-collaborations></app-collaborations>

@@ -2,12 +2,13 @@
 
 <section class="hero-section">
   <div class="card-grid">
-    <a class="card" *ngFor="let service of services"  href="#">
+    <a class="card" *ngFor="let service of services" (click)="openDetail(service)">
       <div class="card__background" style="background-image: url({{service?.picture}})"></div>
       <div class="card__content">
-        <p class="card__category">{{'Service' | translate }}</p>
+        <p class="card__category">{{'Service' | translate}}</p>
         <h3 class="card__heading">{{service?.title | translate}}</h3>
       </div>
     </a>
+    <app-card-detail *ngIf="selectedService" [service]="selectedService" (close)="closeDetail()"></app-card-detail>
   </div>
 </section>

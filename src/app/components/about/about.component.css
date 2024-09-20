@@ -24,7 +24,8 @@
         margin-bottom: 2%;
     }
 
-    .about-container p, .about-container ul {
+    .about-container p,
+    .about-container ul {
         line-height: 1.6;
     }
 
@@ -38,7 +39,7 @@
     }
 
     #title {
-        margin-top: 10%;
+        margin-top: 10vh;
         text-align: center;
         width: 100%;
         height: 100%;
@@ -74,11 +75,15 @@
     }
 
     pre {
-        width: 100%; /* Définissez la largeur souhaitée */
-        white-space: pre-wrap; /* Forcer le retour à la ligne */
-        word-wrap: break-word; /* Pour assurer la compatibilité */
+        width: 100%;
+        /* Définissez la largeur souhaitée */
+        white-space: pre-wrap;
+        /* Forcer le retour à la ligne */
+        word-wrap: break-word;
+        /* Pour assurer la compatibilité */
         /*background-color: #f0f0f0; /* Optionnel : couleur de fond pour mieux voir la zone */
-        padding: 10px; /* Optionnel : ajout de padding pour l'espacement */
+        padding: 10px;
+        /* Optionnel : ajout de padding pour l'espacement */
         /*border: 1px solid #ccc;  Optionnel : ajout de bordure */
     }
 
@@ -89,16 +94,19 @@
     }
 
     video {
-        max-width: 100%; /* Vidéo ajustée à la taille du conteneur */
-        height: auto; /* Maintient le ratio d'aspect */
-        display: block; /* Assure que la vidéo prenne toute la largeur du conteneur */
+        max-width: 100%;
+        /* Vidéo ajustée à la taille du conteneur */
+        height: auto;
+        /* Maintient le ratio d'aspect */
+        display: block;
+        /* Assure que la vidéo prenne toute la largeur du conteneur */
     }
 
     .articles-container {
         /* grid-template-columns: repeat(2, 1fr); */
         position: relative;
     }
-    
+
     .article {
         width: fit-content;
         margin: 2%;
@@ -106,16 +114,19 @@
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
         border: 1px solid #5E01FD;
         position: relative;
-        display: inline-block;  /*Permet à la largeur de s'ajuster au contenu */
-        flex-direction: column; 
-        max-width: 45%; /* Limite maximale de la largeur */
+        display: inline-block;
+        /*Permet à la largeur de s'ajuster au contenu */
+        flex-direction: column;
+        max-width: 45%;
+        /* Limite maximale de la largeur */
         padding: 1%;
-        background-color: #f0f0f0; /* Optionnel : couleur de fond pour mieux voir la zone */
+        background-color: #f0f0f0;
+        /* Optionnel : couleur de fond pour mieux voir la zone */
         vertical-align: top;
     }
 
     /* Déco */
-    
+
     #infinity {
         position: relative;
         width: 55px;
@@ -124,7 +135,8 @@
         box-sizing: content-box;
     }
 
-    #infinity:before, #infinity:after {
+    #infinity:before,
+    #infinity:after {
         content: "";
         box-sizing: content-box;
         position: absolute;
@@ -136,13 +148,13 @@
         border-radius: 50px 50px 0 50px;
         transform: rotate(-45deg);
     }
-    
+
     #infinity:after {
-            left: auto;
-            right: 0;
-            border-radius: 50px 50px 50px 0;
-            transform: rotate(45deg);
-        }
+        left: auto;
+        right: 0;
+        border-radius: 50px 50px 50px 0;
+        transform: rotate(45deg);
+    }
 
     #yin-yang {
         width: 96px;
@@ -155,7 +167,7 @@
         border-radius: 100%;
         position: relative;
     }
-    
+
     #yin-yang:before {
         content: "";
         position: absolute;
@@ -168,7 +180,7 @@
         height: 12px;
         box-sizing: content-box;
     }
-    
+
     #yin-yang:after {
         content: "";
         position: absolute;
@@ -182,4 +194,16 @@
         box-sizing: content-box;
     }
 
+
+}
+
+@media screen and (max-width: 1000px) {
+    #infinity {
+        position: relative;
+        width: 55px;
+        height: 20px;
+        left: 40%;
+        box-sizing: content-box;
+        margin-bottom: 8%;
+    }
 }

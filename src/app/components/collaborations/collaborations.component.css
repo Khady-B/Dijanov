@@ -20,15 +20,18 @@
     }
 
     img {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 50px;
+        min-height: 50px;
     }
 
-    
+        
     #collaboration {
-        margin: 2%;
+        margin: 1vw;
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
         justify-content: center;
-        display: table-cell;
+        justify-items: center;
     }
 
     #collaboration.card {
@@ -36,8 +39,20 @@
         height: auto;
     }
 
+    .cards {
+        transition: 0.3s;
+        border-radius: 10px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+        border: 1px solid #5E01FD;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
     .card {
-        margin: 2%;
+        margin: 1vw;
         overflow-y: auto;
         position: relative;
         z-index: 1;
@@ -45,19 +60,26 @@
         background-color: white;
         display: inline-table;
         transition: 0.3s;
-        flex-direction:column;
+        flex-direction:row;
         border-radius: 10px;
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
         border: 1px solid #5E01FD;
-        padding: 5%;
+        min-width: 8vw;
+        max-width: 12vh;
+        max-height: 50vw;
+
+    }
+
+    #card:hover {
+        box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
+        border: 1px solid #5E01FD; /* Accentuer la bordure */
     }
 
     .card-header {
         position: relative;
         display: flex;
-        min-height: 600px;
-        flex-shrink: 0;
-        width: 100%;
+        min-height: 60vh;
+        width: 30vw;
         transition: 0.3s;
     }
 
@@ -70,7 +92,6 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        height: 100%;
         top: -20%;
         left: 0;
         will-change: top;
@@ -149,7 +170,7 @@
     }
 
 
-    hr {
+    .hr {
         width: 100%;
         margin-bottom: 8%;
         text-align: center;

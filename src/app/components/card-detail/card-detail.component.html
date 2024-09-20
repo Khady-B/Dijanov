@@ -1,0 +1,14 @@
+<div class="modal">
+    <div #modalContent class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>{{service?.title | translate}}</h2>
+        <img [src]="service?.picture" alt="{{service?.title | translate}}" />
+        <p>{{service?.description | translate}}</p>
+        <ul class="card-desc" *ngIf="service?.id == 5">
+            <li>{{'Formation_1'  | translate}}</li>
+            <li>{{'Formation_2'  | translate}}</li>
+            <li>{{'Formation_3'  | translate}}</li>
+            <li>{{'Formation_4'  | translate}}</li>
+        </ul>
+    </div>
+</div>

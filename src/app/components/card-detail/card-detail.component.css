@@ -1,0 +1,104 @@
+img {
+    max-width: 80vw;
+    max-height: 40vh;
+}
+
+.modal {
+    display: inline-table;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: min-content;
+    height: min-content;
+    max-width: 99vw;
+    /*max-height: 86vh;*/
+    /* Could be more or less, depending on screen size */
+    transition: all 0.3s ease; /* Transition pour rendre les ajustements plus fluides */
+    cursor: move; /* Indicateur visuel pour montrer que l'élément est déplaçable */
+}
+
+.modal-content::after(.close) {
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .modal-content {
+        width: 40vw;
+        height: 85vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .modal-content {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal-content {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .modal-content {
+        width: 90vw;
+        height: 85vh;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    .modal-content {
+        width: 60vw;
+        height: 86vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-content {
+        width: 80vw;
+        height: 85vh;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-items: start;
+    width: 1vw;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2, p {
+    text-align: center;
+}
+
+p {
+    margin: 4%;
+}
