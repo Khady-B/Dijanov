@@ -1,0 +1,237 @@
+[
+    {
+        "type": "skill_type_1",
+        "values" : [
+            {
+                "id": 1,
+                "title": "C",
+                "picture": "./assets/img/skills/C_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "C++",
+                "picture": "./assets/img/skills/C++_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "C#",
+                "picture": "./assets/img/skills/C_sharp_logo.png"
+            },
+            {
+                "id": 4,
+                "title": "Go",
+                "picture": "./assets/img/skills/Go_logo.png"
+            },
+            {
+                "id": 5,
+                "title": "Java",
+                "picture": "./assets/img/skills/Java_logo.jpg"
+            },
+            {
+                "id": 6,
+                "title": "JavaScript",
+                "picture": "./assets/img/skills/JavaScript_logo.png"
+            },
+            {
+                "id": 7,
+                "title": "TypeScript",
+                "picture": "./assets/img/skills/TypeScript_logo.jpg"
+            },
+            {
+                "id": 8,
+                "title": "OCaml",
+                "picture": "./assets/img/skills/OCaml_logo.png"
+            },
+            {
+                "id": 9,
+                "title": "PHP",
+                "picture": "./assets/img/skills/PHP_logo.png"
+            },
+            {
+                "id": 10,
+                "title": "Python",
+                "picture": "./assets/img/skills/Python_logo.jpg"
+            },
+            {
+                "id": 11,
+                "title": "Scala",
+                "picture": "./assets/img/skills/Scala_logo.png"
+            },
+            {
+                "id": 12,
+                "title": "UML",
+                "picture": "./assets/img/skills/UML_logo.png"
+            },
+            {
+                "id": 13,
+                "title": "XML",
+                "picture": "./assets/img/skills/XML_logo.png"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_2",
+        "values" : [
+            {
+                "id": 1,
+                "title": "CSS",
+                "picture": "./assets/img/skills/CSS_logo.jpg"
+            },
+            {
+                "id": 2,
+                "title": "HTML",
+                "picture": "./assets/img/skills/HTML_logo.jpg"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_3",
+        "values" : [
+            {
+                "id": 1,
+                "title": "GraphQL",
+                "picture": "./assets/img/skills/GraphQL_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "MongoDB",
+                "picture": "./assets/img/skills/NoSQL_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "PostgreSQL",
+                "picture": "./assets/img/skills/PostgreSQL_logo.png"
+            },
+            {
+                "id": 4,
+                "title": "SQL",
+                "picture": "./assets/img/skills/SQL_logo.jpg"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_4",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Angular",
+                "picture": "./assets/img/skills/Angular_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "React",
+                "picture": "./assets/img/skills/React_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "Spring Boot",
+                "picture": "./assets/img/skills/Spring-boot_logo.png"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_5",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Canva",
+                "picture": "./assets/img/skills/Canva_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "Draw.io",
+                "picture": "./assets/img/skills/Draw.io_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "Lucidchart",
+                "picture": "./assets/img/skills/Lucidchart_logo.png"
+            },
+            {
+                "id": 4,
+                "title": "Visual Paradigm",
+                "picture": "./assets/img/skills/Visual-Paradigm_logo.png"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_6",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Jira",
+                "picture": "./assets/img/skills/Jira_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "Trello",
+                "picture": "./assets/img/skills/Trello_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "YouTrack",
+                "picture": "./assets/img/skills/YouTrack_logo.png"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_7",
+        "values" : [
+            {
+                "id": 1,
+                "title": "IVR Designer",
+                "picture": "./assets/img/skills/IVR-Designer_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "Illuin Dialogue",
+                "picture": "./assets/img/skills/Illuin-Dialogue_logo.png"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_8",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Docker",
+                "picture": "./assets/img/skills/Docker_logo.png"
+            },
+            {
+                "id": 2,
+                "title": "Eclipse",
+                "picture": "./assets/img/skills/Eclipse_logo.png"
+            },
+            {
+                "id": 3,
+                "title": "Git",
+                "picture": "./assets/img/skills/Git_logo.png"
+            },
+            {
+                "id": 4,
+                "title": "GitHub",
+                "picture": "./assets/img/skills/GitHub_logo.png"
+            },
+            {
+                "id": 5,
+                "title": "Gitlab",
+                "picture": "./assets/img/skills/Gitlab_logo.png"
+            },
+            {
+                "id": 6,
+                "title": "IntelliJ",
+                "picture": "./assets/img/skills/IntelliJ-IDEA_logo.png"
+            },
+            {
+                "id": 7,
+                "title": "Jenkins",
+                "picture": "./assets/img/skills/Jenkins_logo.png"
+            },
+            {
+                "id": 8,
+                "title": "VS Code",
+                "picture": "./assets/img/skills/VSCode_logo.png"
+            }
+        ]
+    }
+]

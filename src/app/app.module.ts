@@ -25,6 +25,9 @@ import { SectionsComponent } from './components/sections/sections.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactService } from './services/contact.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardsComponent } from './components/cards/cards.component';
+import { CardDetailComponent } from './components/card-detail/card-detail.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -45,7 +48,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeadingComponent,
     ArticlesComponent,
     SectionsComponent,
-    ContactComponent
+    ContactComponent,
+    CardsComponent,
+    CardDetailComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ export class DataService {
   private servicesUrl = './assets/datas/services.json';
   private collaborationsUrl = './assets/datas/collaborations.json';
   private articlesUrl = './assets/datas/articles.json';
+  private skillsUrl = './assets/datas/skills.json';
 
   constructor(private http: HttpClient) { }
 
@@ -24,5 +25,9 @@ export class DataService {
 
   getDataArticles(): Observable<any[]> {
     return this.http.get<any[]>(this.articlesUrl);
+  }
+
+  getDataSkills(): Observable<any[]> {
+    return this.http.get<any[]>(this.skillsUrl);
   }
 }
