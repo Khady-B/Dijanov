@@ -15,22 +15,28 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      # Étape d'installation des dépendances Node.js si applicable
+      - name: Install dependencies
+        run: npm install
+
+      # Étape de build (génère les fichiers statiques dans ./dist ou autre)
+      - name: Build the project
+        run: npm run build  # Remplacez par la commande de build appropriée
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -38,12 +44,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Specify the directory to upload, adjust as necessary
-          path: './public'  # Change to your build output folder (e.g., './public', './dist', etc.)
-          name: github-pages-artifact  # Ensure the artifact has a unique name
+          # Spécifiez le bon répertoire de build
+          path: './dist'  # Ajustez ce chemin pour pointer vers votre répertoire de build
+          name: github-pages-artifact
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact-name: github-pages-artifact  # Match the artifact name you uploaded
+          artifact-name: github-pages-artifact
