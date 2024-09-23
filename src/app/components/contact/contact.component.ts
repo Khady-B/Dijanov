@@ -128,6 +128,24 @@ export class ContactComponent {
 
       formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
 
+      /*const formData = {
+        lastName: this.contactForm.value.lastName,
+        firstName: this.contactForm.value.firstName,
+        email: this.contactForm.value.email,
+        tel: this.contactForm.value.tel || '', // Champ optionnel
+        service: this.contactForm.value.service,
+        message: this.contactForm.value.message,
+        subject: '[Dijanov] ' + this.contactForm.value.service,
+        files: [] as File[] // Tableau de fichiers
+      };
+      
+      // Ajout des fichiers s'ils existent
+      if (this.selectedFiles && this.selectedFiles.length > 0) {
+        this.selectedFiles.forEach((file: File) => {
+          formData.files.push(file);
+        });
+      }*/
+      
       this.contactService.sendContactForm(formData).subscribe(
       response => {
           this.successMessage = this.translate.instant('Message_succès');
