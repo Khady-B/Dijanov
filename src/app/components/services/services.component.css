@@ -12,12 +12,6 @@
         }
     }
 
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
 
     img {
         min-width: 200px;
@@ -45,7 +39,6 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
-
     }
 
     .card {

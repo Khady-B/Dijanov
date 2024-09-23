@@ -3,7 +3,7 @@
       <div class="contact-container" style="background-image: url(assets/img/Dijanov_logo_cover_2.png);">
         <h1 id="title">Contact</h1>
         <hr>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
           <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
           <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
           <div class="form-group mb-2">
@@ -35,7 +35,7 @@
             <label for="file" >Documents </label>
             <label class="files" for="file" >{{'Choix' | translate}}</label>
             <input type="file" id="file" name="file" title="{{'Choix' | translate}}"
-            accept=".pdf,.doc,.docx,.jpg,.png" multiple (change)="onFileChange($event)">
+            multiple accept=".pdf,.doc,.docx,.jpg,.png" (change)="onFileChange($event)">
             <div class="preview">
               <p>{{'Choix_desc' | translate}}</p>
             </div>
