@@ -1,32 +1,20 @@
 [
     {
         "id": 1,
-        "title": "collaboration_title_1",
+        "title": "KeyHomeStaff",
         "picture": "./assets/img/collaborations/collaboration_KHS.png",
-        "description": "collaboration_description_1"
+        "description": "Entreprise spécialisée dans les services à domicile, dédiée à l'entretien ménager personnalisé."
     },
     {
         "id": 2,
-        "title": "collaboration_title_2",
+        "title": "Les fées marraines",
         "picture": "./assets/img/collaborations/collaboration_LFM.jpg",
-        "description": "collaboration_description_2"
+        "description": "Collectif de professionnelles de Rouen Métropole qui se sont réunies pour donner vie à une solution d’aide à l’orientation des jeunes vers le numérique et plus particulièrement des filles."
     },
     {
         "id": 3,
-        "title": "collaboration_title_3",
+        "title": "Université de Rouen-Normandie",
         "picture": "./assets/img/collaborations/collaboration_UFR.png",
-        "description": "collaboration_description_3"
-    },
-    {
-        "id": 4,
-        "title": "collaboration_title_4",
-        "picture": "./assets/img/collaborations/collaboration_entreprise.png",
-        "description": "collaboration_description_4"
-    },
-    {
-        "id": 5,
-        "title": "collaboration_title_5",
-        "picture": "./assets/img/collaborations/collaboration_entreprise.png",
-        "description": "collaboration_description_5"
+        "description": "UFR Sciences et techniques\nDépartement informatique\n Acteur majeur de la formation et de la recherche en Normandie."
     }
 ]
