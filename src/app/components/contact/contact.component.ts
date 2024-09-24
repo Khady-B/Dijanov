@@ -102,7 +102,7 @@ export class ContactComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      const formData = new FormData();
+      /*const formData = new FormData();
       formData.append('lastName', this.contactForm.value.lastName);
       formData.append('firstName', this.contactForm.value.firstName);
       formData.append('email', this.contactForm.value.email);
@@ -115,7 +115,7 @@ export class ContactComponent {
           formData.append('files[]', file); // Tableau de fichiers
         });
       }
-      /*const formData = {
+      const formData = {
         lastName: this.contactForm.value.lastName,
         firstName: this.contactForm.value.firstName,
         email: this.contactForm.value.email,
@@ -126,9 +126,9 @@ export class ContactComponent {
         _subject: '[Dijanov] ' + this.contactForm.value.service // Ajout du sujet ici
       };*/
 
-      formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
+      //formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
 
-      /*const formData = {
+      const formData = {
         lastName: this.contactForm.value.lastName,
         firstName: this.contactForm.value.firstName,
         email: this.contactForm.value.email,
@@ -144,7 +144,7 @@ export class ContactComponent {
         this.selectedFiles.forEach((file: File) => {
           formData.files.push(file);
         });
-      }*/
+      }
       
       this.contactService.sendContactForm(formData).subscribe(
       response => {
