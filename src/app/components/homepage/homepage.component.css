@@ -53,52 +53,17 @@
     height: fit-content;
   }
 
-  
-  /* Style pour le sous-titre 
-  .subtitle {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 10px;
-  }*/
-
-  
-
-
  @media screen and (max-width: 960px) {
     .title {
       margin-top: 5vh;
     }
   }
 
- /*
-  @media screen and (max-width: 635px) {
-    .title {
-      margin-top: 20vh;
-    }
-  }
-
- @media screen and (max-width: 442px) {
-    .title {
-      margin-top: 25vh;
-    }
-  }
-
-  
-
-  @media screen and (max-width: 330px) {
-    .title {
-      margin-top: 30vh;
-    }
-  }
-*/
-  
   @media screen and (max-width: 555px) {
     .title {
       margin-top: 10vh;
     }
   }
-
   
   @media screen and (max-width: 393px) {
     .title {
@@ -106,7 +71,6 @@
     }
   }
 
-  
   @media screen and (max-width: 226px) {
     .title {
       margin-top: 20vh;
@@ -118,23 +82,3 @@
       margin-top: 25vh;
     }
   }
-
-  /*
-  @media screen and (max-width: 233px) {
-    .title {
-      margin-top: 35vh;
-    }
-  }
- 
-  @media screen and (max-width: 225px) {
-    .title {
-      margin-top: 40vh;
-    }
-  } 
-
-  @media screen and (max-width: 192px) {
-    .title {
-      margin-top: 55vh;
-    }
-  }
-    */
