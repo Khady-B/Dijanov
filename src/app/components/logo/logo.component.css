@@ -34,7 +34,9 @@
 
   .flip {
     position: relative;
-    margin-top: -5%; /* Ajustez la marge selon vos besoins */
+    margin-top: 12vh;  /*Ajustez la marge selon vos besoins */
+    margin-right: 2%;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,50 +91,32 @@
   }
 
   .welcome {
-    margin-top: 25vh;
+    position: relative;
+    margin: 8vh;
+    margin-bottom: -20vh;
   }
 
   @media screen and (max-width: 3000px) {
-    .flip {
-      margin-top: 5vh;
-    }
-
     .flip .slogan p {
       font-size: 0.8vw;
     }
   }
 
   @media screen and (max-width: 2000px) {
-    .flip {
-      margin-top: 5vh;
-    }
-
     .flip .slogan p {
       font-size: 1.3vw;
     }
   }
 
   @media screen and (max-width: 1500px) {
-    .flip {
-      margin-top: 5vh;
-    }
-
     .flip .slogan p {
       font-size: 1.6vw;
     }
   }
 
   @media screen and (max-width: 1250px) {
-    .flip {
-      margin-top: 22vh;
-    }
-
     .flip .slogan p {
       font-size: 1.8vw;
-    }
-
-    .welcome {
-      margin-top: 6%;
     }
   }
 
@@ -141,80 +125,16 @@
       font-size: 2.3vw;
     }
 
-    .welcome {
-      margin-top: 8%;
-    }
   }
 
   @media screen and (max-width: 800px) {
-    .flip {
-      margin-top: 25vh;
-    }
-
     .flip .slogan p {
       font-size: 2.8vw;
-    }
-
-    .welcome {
-      margin-top: 10%;
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    .flip {
-      margin-top: 30vh;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    .flip {
-      margin-top: 30vh;
     }
   }
 
   @media screen and (max-width: 600px) {
-    .flip {
-      margin-top: 25vh;
-    }
-
     .flip .slogan p {
       font-size: 3.5vw;
-    }
-
-    .welcome {
-      margin-top: 16%;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    .flip {
-      margin-top: 30vh;
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    .flip {
-      margin-top: 33vh;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .welcome {
-      margin-top: 30%;
-    }
-  }
-
-  @media screen and (max-width: 300px) {
-    .flip {
-      margin-top: 55vh;
-    }
-  }
-
-  @media screen and (max-width: 200px) {
-    .flip {
-      margin-top: 55vh;
-    }
-    .welcome {
-      margin-top: 70%;
     }
   }

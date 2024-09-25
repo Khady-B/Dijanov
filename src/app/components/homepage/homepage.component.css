@@ -25,12 +25,14 @@
   }
 
   /* Style pour le conteneur */
-  .welcome {
-    position: absolute;
+  .title {
+    position: relative;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 25vh;
+    margin-top: 10vh;
     width: 80vw;
+    height: fit-content;
+    text-align: center;
   }
 
   /* Style pour le titre */
@@ -47,8 +49,9 @@
     text-align: center;
     line-height: 80px;
     letter-spacing: -2px;
-    width: 100%;
+    width: 100vw;
     word-wrap: break-word;
+    height: fit-content;
   }
 
   
@@ -59,3 +62,47 @@
     text-transform: uppercase;
     padding-top: 10px;
   }*/
+
+  
+  @media screen and (max-width: 1080px) {
+    .title {
+      margin-top: 15vh;
+    }
+  }
+
+ 
+  @media screen and (max-width: 635px) {
+    .title {
+      margin-top: 20vh;
+    }
+  }
+
+ @media screen and (max-width: 442px) {
+    .title {
+      margin-top: 25vh;
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    .title {
+      margin-top: 30vh;
+    }
+  }
+
+  @media screen and (max-width: 233px) {
+    .title {
+      margin-top: 35vh;
+    }
+  }
+ 
+  @media screen and (max-width: 225px) {
+    .title {
+      margin-top: 40vh;
+    }
+  } 
+
+  @media screen and (max-width: 192px) {
+    .title {
+      margin-top: 55vh;
+    }
+  }

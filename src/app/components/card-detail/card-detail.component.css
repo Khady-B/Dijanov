@@ -23,7 +23,7 @@ img {
     padding: 20px;
     border: 1px solid #888;
     width: min-content;
-    height: min-content;
+    height: fit-content;
     max-width: 99vw;
     /*max-height: 86vh;*/
     /* Could be more or less, depending on screen size */
@@ -38,12 +38,6 @@ img {
     justify-items: center;
 }
 
-@media screen and (max-width: 1400px) {
-    .modal-content {
-        width: 40vw;
-        height: 85vh;
-    }
-}
 
 @media screen and (max-width: 1000px) {
     .modal-content {
@@ -59,8 +53,7 @@ img {
 
 @media screen and (max-width: 750px) {
     .modal-content {
-        width: 90vw;
-        height: 85vh;
+        width: 60vw;
     }
 }
 
@@ -68,14 +61,12 @@ img {
 @media screen and (max-width: 630px) {
     .modal-content {
         width: 60vw;
-        height: 86vh;
     }
 }
 
 @media screen and (max-width: 400px) {
     .modal-content {
         width: 80vw;
-        height: 85vh;
     }
 }
 

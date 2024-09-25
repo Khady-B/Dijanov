@@ -22,6 +22,7 @@
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
+        height: fit-content;
     }
 
     #collaboration.card {
