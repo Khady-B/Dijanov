@@ -30,6 +30,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Run `ng build --configuration production --base-href "https://Khady-B.github.io/Dijanov/"`
 
+## Construire le projet
+
+Run `ng build --configuration production --output-path docs --base-href ./`
+
+
 ## Déployez sur GitHub Pages
 
 Run `npx angular-cli-ghpages --dir=dist/Dijanov`

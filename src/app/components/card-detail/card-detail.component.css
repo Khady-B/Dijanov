@@ -93,3 +93,7 @@ h2, p {
 p {
     margin: 4%;
 }
+
+li {
+    font-size: small;
+}

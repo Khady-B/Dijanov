@@ -101,8 +101,8 @@ export class ContactComponent {
   }
 
   onSubmit(): void {
-    if (this.contactForm.valid) {
-      /*const formData = new FormData();
+    /*if (this.contactForm.valid) {
+      const formData = new FormData();
       formData.append('lastName', this.contactForm.value.lastName);
       formData.append('firstName', this.contactForm.value.firstName);
       formData.append('email', this.contactForm.value.email);
@@ -128,34 +128,34 @@ export class ContactComponent {
 
       //formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
 
-      const formData = {
-        lastName: this.contactForm.value.lastName,
-        firstName: this.contactForm.value.firstName,
-        email: this.contactForm.value.email,
-        tel: this.contactForm.value.tel || '', // Champ optionnel
-        service: this.contactForm.value.service,
-        message: this.contactForm.value.message,
-        subject: '[Dijanov] ' + this.contactForm.value.service,
-        files: [] as File[] // Tableau de fichiers
-      };
-      
-      // Ajout des fichiers s'ils existent
-      if (this.selectedFiles && this.selectedFiles.length > 0) {
-        this.selectedFiles.forEach((file: File) => {
-          formData.files.push(file);
-        });
-      }
-      
-      this.contactService.sendContactForm(formData).subscribe(
-      response => {
-          this.successMessage = this.translate.instant('Message_succès');
-          this.contactForm.reset();
-          this.selectedFiles = null;
-        },
-        error => {
-          this.errorMessage = this.translate.instant('Message_erreur');
-        }
-      );
+    const formData = new FormData();
+    
+    // Ajout des données de formulaire
+    formData.append('lastName', this.contactForm.value.lastName);
+    formData.append('firstName', this.contactForm.value.firstName);
+    formData.append('email', this.contactForm.value.email);
+    formData.append('tel', this.contactForm.value.tel || ''); // Champ optionnel
+    formData.append('service', this.contactForm.value.service);
+    formData.append('message', this.contactForm.value.message);
+    formData.append('subject', '[Dijanov] ' + this.contactForm.value.service); // Ajout du sujet ici
+    
+    // Ajout des fichiers s'ils existent
+    if (this.selectedFiles && this.selectedFiles.length > 0) {
+      this.selectedFiles.forEach((file: File) => {
+        formData.append('files[]', file); // Ajout chaque fichier individuellement
+      });
     }
+
+    // Envoi du formulaire via le service
+    this.contactService.sendContactForm(formData).subscribe(
+      response => {
+        this.successMessage = this.translate.instant('Message_succès');
+        this.contactForm.reset();
+        this.selectedFiles = null;
+      },
+      error => {
+        this.errorMessage = this.translate.instant('Message_erreur');
+      }
+    );
   }
 }
