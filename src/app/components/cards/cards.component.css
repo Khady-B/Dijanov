@@ -32,6 +32,7 @@
       align-items: center;
       justify-content: center;
       justify-items: center;
+      margin-top: 15vh;
     }
   
     @media(min-width: 540px){
@@ -57,6 +58,38 @@
         grid-template-columns: repeat(5, 1fr);
       }
     }
+
+    
+ @media screen and (max-width: 960px) {
+  .card-grid {
+    margin-top: 15vh;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .card-grid {
+    margin-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .card-grid {
+    margin-top: 35vh;
+  }
+}
+
+@media screen and (max-width: 226px) {
+  .card-grid {
+    margin-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 206px) {
+  .card-grid {
+    margin-top: 50vh;
+  }
+}
+
   
     .card{
       list-style: none;

@@ -92,8 +92,11 @@
 
   .welcome {
     position: relative;
-    margin: 8vh;
-    margin-bottom: -20vh;
+    margin-top: 8vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-bottom: -6%;
+    height: 0;
   }
 
   @media screen and (max-width: 3000px) {
