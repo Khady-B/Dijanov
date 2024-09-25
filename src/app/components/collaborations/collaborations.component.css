@@ -22,12 +22,12 @@
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
-        height: fit-content;
+        height: max-content;
     }
 
     #collaboration.card {
         width: auto;
-        height: auto;
+        height: max-content;
     }
 
     .cards {
@@ -40,6 +40,7 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+        height: max-content;
     }
 
     .card {
@@ -57,7 +58,7 @@
         border: 1px solid #5E01FD;
         min-width: 30vw;
         max-width: 72vh;
-        max-height: 50vw;
+        height: max-content;
 
     }
 
