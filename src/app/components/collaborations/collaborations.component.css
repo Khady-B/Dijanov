@@ -62,6 +62,12 @@
 
     }
 
+    @media only screen and (max-width: 767px) {
+        .card {
+            height: max-content;
+        }
+    }
+
     #card:hover {
         box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
         border: 1px solid #5E01FD; /* Accentuer la bordure */
