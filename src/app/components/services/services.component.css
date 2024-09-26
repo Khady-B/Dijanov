@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
+html {
+    -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
+}
+
 @media screen and (max-width: 3000px) {
 
     * {
@@ -12,6 +16,8 @@
         }
     }
 
+
+      
 
     img {
         min-width: 200px;

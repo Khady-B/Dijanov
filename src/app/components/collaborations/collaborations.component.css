@@ -12,6 +12,9 @@
         }
     }
 
+    html {
+        -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
+    }
 
     img {
         min-width: 200px;
