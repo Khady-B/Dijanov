@@ -26,13 +26,12 @@
       grid-row-gap: var(--spacing-1);
       max-width: var(--width-container);
       width: 100%;
-      /*margin-left: 2vw;
-      margin-right: 2vw;*/
       align-content: center;
       align-items: center;
       justify-content: center;
       justify-items: center;
       margin-top: 15vh;
+      text-align: center;
     }
   
     @media(min-width: 540px){

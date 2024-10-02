@@ -44,6 +44,8 @@
         justify-content: center;
         justify-items: center;
         height: max-content;
+        height: -webkit-max-content;
+        text-align: center;
     }
 
     .card {
@@ -63,12 +65,6 @@
         max-width: 72vh;
         height: max-content;
 
-    }
-
-    @media only screen and (max-width: 767px) {
-        .card {
-            height: max-content;
-        }
     }
 
     #card:hover {

@@ -4,6 +4,7 @@
 
     * {
         box-sizing: border-box;
+        text-align: center;
     }
 
     @keyframes textclip {
@@ -49,6 +50,7 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+        text-align: center;
         
     }
 

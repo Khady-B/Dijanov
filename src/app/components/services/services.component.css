@@ -16,9 +16,6 @@ html {
         }
     }
 
-
-      
-
     img {
         min-width: 200px;
         min-height: 200px;
@@ -47,6 +44,7 @@ html {
         justify-content: center;
         justify-items: center;
         height: max-content;
+        text-align: center;
     }
 
     .card {
@@ -65,14 +63,25 @@ html {
         min-width: 30vw;
         max-width: 72vh;
         height: max-content;
+        height: -webkit-max-content;
     }
 
+    /*
     @media only screen and (max-width: 767px) {
         .card {
             height: max-content;
+            height: -webkit-max-content;
         }
     }
-    
+
+    @media only screen and (max-width: 375px) and (min-device-pixel-ratio: 2) {
+        .card {
+            height: max-content;
+            height: -webkit-max-content;
+        }
+    }
+    */
+
     #card:hover {
         box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
         border: 1px solid #5E01FD; /* Accentuer la bordure */
@@ -89,7 +98,6 @@ html {
     .card-header * {
         transition: 0.3s;
     }
-
     
     .card-cover {
         width: 100%;
@@ -160,7 +168,6 @@ html {
         border-radius: 10px;
     }
 
-
     .card-desc {
         color: #000000;
         font-size: 14px;
@@ -171,7 +178,6 @@ html {
         
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
     }
-
 
     .hr {
         width: 100%;
@@ -200,7 +206,6 @@ html {
             bottom: 0;
             right: 0;
         }
-
 
         .card-title {
             position: relative;
