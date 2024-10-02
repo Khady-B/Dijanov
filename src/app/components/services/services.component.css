@@ -43,7 +43,7 @@ html {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: -webkit-fit-content;
+        height: -webkit-fill-available;
         text-align: center;
     }
 
@@ -62,7 +62,6 @@ html {
         border: 1px solid #5E01FD;
         min-width: 30vw;
         max-width: 72vh;
-        height: -webkit-fill-available;
     }
 
     @media only screen and (max-width: 767px) {
