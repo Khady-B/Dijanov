@@ -25,12 +25,12 @@ html {
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
-        height: -webkit-max-content;
+        height: -webkit-fill-available;
     }
 
     #service.card {
         width: auto;
-        height: -webkit-max-content;
+        height: -webkit-fill-available;
     }
 
     .cards {
@@ -43,7 +43,7 @@ html {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: max-content;
+        height: -webkit-fill-available;
         text-align: center;
     }
 
@@ -62,18 +62,18 @@ html {
         border: 1px solid #5E01FD;
         min-width: 30vw;
         max-width: 72vh;
-        height: -webkit-max-content;
+        height: -webkit-fill-available;
     }
 
     @media only screen and (max-width: 767px) {
         .card {
-            height: -webkit-max-content;
+            height: -webkit-fill-available;
         }
     }
 
     @media only screen and (max-width: 375px) and (min-device-pixel-ratio: 2) {
         .card {
-            height: -webkit-max-content;
+            height: -webkit-fill-available;
         }
     }
 
@@ -161,7 +161,8 @@ html {
         color: black;
         background-color: #ffffff2b;
         border-radius: 10px;
-        height: -webkit-max-content;
+        height: -webkit-fill-available;
+        /*min-height: 80vh;*/
     }
 
     .card-desc {
