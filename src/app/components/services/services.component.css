@@ -43,7 +43,7 @@ html {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: -webkit-fill-available;
+        height: -webkit-fit-content;
         text-align: center;
     }
 
@@ -160,7 +160,7 @@ html {
         color: black;
         background-color: #ffffff2b;
         border-radius: 10px;
-        height: -webkit-fit-content;
+        height: -webkit-fill-available;
         /*min-height: 80vh;*/
     }
 
