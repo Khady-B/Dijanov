@@ -25,12 +25,12 @@ html {
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
-        height: -webkit-fit-content;
+        height: -webkit-max-content;
     }
 
     #service.card {
         width: auto;
-        height: -webkit-fit-content;
+        height: -webkit-max-content;
     }
 
     .cards {
@@ -43,7 +43,7 @@ html {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: -webkit-fit-content;
+        min-height: 80vh;
         text-align: center;
     }
 
@@ -66,13 +66,13 @@ html {
 
     @media only screen and (max-width: 767px) {
         .card {
-            height: -webkit-fit-content;
+            height: -webkit-max-content;
         }
     }
 
     @media only screen and (max-width: 375px) and (min-device-pixel-ratio: 2) {
         .card {
-            height: -webkit-fit-content;
+            height: -webkit-max-content;
         }
     }
 
@@ -160,7 +160,7 @@ html {
         color: black;
         background-color: #ffffff2b;
         border-radius: 10px;
-        height: -webkit-fill-available;
+        height: -webkit-max-content;
         /*min-height: 80vh;*/
     }
 
