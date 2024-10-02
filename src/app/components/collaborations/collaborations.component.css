@@ -161,9 +161,9 @@
         margin: 0;
         font-weight: 400;
         font-family: "DM Sans", sans-serif;
-        font-size: large;
-        
+        font-size: medium;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        display: contents;
     }
 
 

@@ -66,11 +66,11 @@ html {
         height: -webkit-max-content;
     }
 
-    /*
     @media only screen and (max-width: 767px) {
         .card {
             height: max-content;
             height: -webkit-max-content;
+            -webkit-text-size-adjust: 50%;
         }
     }
 
@@ -78,9 +78,9 @@ html {
         .card {
             height: max-content;
             height: -webkit-max-content;
+            -webkit-text-size-adjust: 50%;
         }
     }
-    */
 
     #card:hover {
         box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
@@ -174,9 +174,10 @@ html {
         margin: 0;
         font-weight: 400;
         font-family: "DM Sans", sans-serif;
-        font-size: large;
-        
+        font-size: medium;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        height: max-content;
+        height: -webkit-max-content;
     }
 
     .hr {
@@ -281,6 +282,7 @@ html {
     ul {
         padding-top: 2%;
         padding-left: 5%;
+        text-align: left;
     }
     
 }
