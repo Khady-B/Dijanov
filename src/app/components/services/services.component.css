@@ -25,12 +25,11 @@ html {
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
-        height: -webkit-fill-available;
+        /*height: -webkit-max-content;*/
     }
 
     #service.card {
         width: auto;
-        height: -webkit-fill-available;
     }
 
     .cards {
@@ -44,7 +43,6 @@ html {
         justify-content: center;
         justify-items: center;
         text-align: center;
-        height: -webkit-fill-available;
     }
 
     .card {
@@ -62,18 +60,17 @@ html {
         border: 1px solid #5E01FD;
         min-width: 30vw;
         max-width: 72vh;
-        height: -webkit-fill-available;
     }
 
     @media only screen and (max-width: 767px) {
         .card {
-            height: -webkit-fill-available;
+            height: -webkit-max-content;
         }
     }
 
     @media only screen and (max-width: 375px) and (min-device-pixel-ratio: 2) {
         .card {
-            height: -webkit-fill-available;
+            height: -webkit-max-content;
         }
     }
 
@@ -161,8 +158,8 @@ html {
         color: black;
         background-color: #ffffff2b;
         border-radius: 10px;
-        height: -webkit-fill-available;
-        /*min-height: 80vh;*/
+        height: -webkit-max-content;
+        min-height: -webkit-fit-content;
     }
 
     .card-desc {
@@ -174,7 +171,9 @@ html {
         font-size: large;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
         display: block;
-        height: -webkit-fill-available;
+        height: -webkit-max-content;
+        min-height: -webkit-fit-content;
+
     }
 
     .hr {
@@ -274,14 +273,14 @@ html {
 
     p {
         text-align: center;
-        height: -webkit-fill-available;
+        height: -webkit-max-content;
     }
 
     ul {
         padding-top: 2%;
         padding-left: 5%;
         text-align: left;
-        height: -webkit-fill-available;
+        height: -webkit-max-content;
     }
     
     li {
