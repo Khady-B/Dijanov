@@ -155,8 +155,8 @@ html {
         font-family: "DM Sans", sans-serif;
         font-size: large;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        display: block;
         min-height: -webkit-fill-available;
-
     }
 
     .hr {
@@ -264,7 +264,4 @@ html {
         text-align: left;
     }
     
-    li {
-        font-size: medium;
-    }
 }

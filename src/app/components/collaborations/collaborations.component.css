@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
+html {
+    -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
+}
+
 @media screen and (max-width: 3000px) {
 
     * {
@@ -12,9 +16,6 @@
         }
     }
 
-    html {
-        -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
-    }
 
     img {
         min-width: 200px;
@@ -25,12 +26,10 @@
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
-        height: max-content;
     }
 
     #collaboration.card {
         width: auto;
-        height: max-content;
     }
 
     .cards {
@@ -43,8 +42,6 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: max-content;
-        height: -webkit-max-content;
         text-align: center;
     }
 
@@ -63,8 +60,6 @@
         border: 1px solid #5E01FD;
         min-width: 30vw;
         max-width: 72vh;
-        height: max-content;
-
     }
 
     #card:hover {
@@ -83,7 +78,6 @@
     .card-header * {
         transition: 0.3s;
     }
-
     
     .card-cover {
         width: 100%;
@@ -163,6 +157,7 @@
         font-family: "DM Sans", sans-serif;
         font-size: large;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        display: block;
         min-height: -webkit-fill-available;
     }
 
@@ -265,11 +260,6 @@
 
     p {
         text-align: center;
-    }
-
-    ul {
-        padding-top: 2%;
-        padding-left: 5%;
     }
     
 }
