@@ -43,7 +43,6 @@ html {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        min-height: 80vh;
         text-align: center;
     }
 
@@ -173,6 +172,7 @@ html {
         font-size: large;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
         display: block;
+        height: -webkit-fill-available;
     }
 
     .hr {
