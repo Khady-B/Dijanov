@@ -64,13 +64,15 @@ html {
 
     @media only screen and (max-width: 767px) {
         .card {
-            height: -webkit-max-content;
+            /* height: -webkit-max-content; */
+            min-height: -webkit-fill-available;
         }
     }
 
     @media only screen and (max-width: 375px) and (min-device-pixel-ratio: 2) {
         .card {
-            height: -webkit-max-content;
+            /* height: -webkit-max-content; */
+            min-height: -webkit-fill-available;
         }
     }
 
@@ -158,8 +160,6 @@ html {
         color: black;
         background-color: #ffffff2b;
         border-radius: 10px;
-        height: -webkit-max-content;
-        min-height: -webkit-fit-content;
     }
 
     .card-desc {
@@ -171,8 +171,7 @@ html {
         font-size: large;
         text-shadow: 2px 2px 20px rgb(255, 255, 255);
         display: block;
-        height: -webkit-max-content;
-        min-height: -webkit-fit-content;
+        min-height: -webkit-fill-available;
 
     }
 
@@ -273,14 +272,12 @@ html {
 
     p {
         text-align: center;
-        height: -webkit-max-content;
     }
 
     ul {
         padding-top: 2%;
         padding-left: 5%;
         text-align: left;
-        height: -webkit-max-content;
     }
     
     li {
