@@ -26,14 +26,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Build de l'application
+## Test Local
+
+Run `npx http-server dist/Dijanov`
+
+## Build de l'application (Avec domaine personnalisé)
+
+Run `ng build --configuration production --base-href "/"`
+
+## Build de l'application (GitHub Pages sans domaine personnalisé)
 
 Run `ng build --configuration production --base-href "https://Khady-B.github.io/Dijanov/"`
 
 ## Construire le projet
 
-Run `ng build --configuration production --output-path docs --base-href ./`
-
+<!-- Run `ng build --configuration production --output-path docs --base-href ./` -->
 
 ## Déployez sur GitHub Pages
 
