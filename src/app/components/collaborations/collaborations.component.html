@@ -4,7 +4,7 @@
     <hr>
     <div id="collaborations" class="cards" data-state="#about">
       <div id="collaboration" class="image border rounded-3 overflow-hidden" *ngFor="let collaboration of collaborations">
-        <div class="card" id="card">
+        <a class="card" id="card" href="{{collaboration?.link}}">
           <div class="card-cover" style="background-image: url('{{collaboration?.picture}}')"></div>
           <img class="card-avatar" src="{{collaboration?.picture}}" alt="avatar" />
           <h1 class="card-title">{{collaboration?.title | translate}}</h1>
@@ -12,7 +12,7 @@
               <h2 class="card-subtitle"></h2>
               <p class="card-desc">{{collaboration?.description | translate}}</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

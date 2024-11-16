@@ -25,9 +25,9 @@
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" routerLink="/about">{{'À_propos' | translate}}</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" routerLink="/contact">{{'Contact' | translate}}</a>
-        </li>
+        </li> -->
         <li class="nav-item" id="language">
           <select #langSelect (change)="languageService.switchLanguage(langSelect.value)">
             <option value="en" [selected]="languageService.currentLanguage === 'en'">{{'Anglais' | translate}}</option>

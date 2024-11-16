@@ -1,0 +1,117 @@
+<div class="modal">
+    <div #modalContent class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        
+         <!-- Mentions Légales -->
+        <section *ngIf="selectedSection === 'mentions'">
+            <h2>{{'Mentions' | translate}}</h2>
+            <hr>
+            <p><strong>{{'Nom' | translate}} :</strong> Khady BA</p>
+            <!-- <p><strong>Adresse :</strong> Votre Adresse complète</p>
+            <p><strong>Téléphone :</strong> Votre numéro de téléphone</p> -->
+            <p><strong>E-mail : </strong> <a href="mailto:contact@dijanov.com"> contact&#64;dijanov.com</a></p>
+            <p><strong>{{'Statut' | translate}} :</strong> {{'Statut_desc' | translate}}</p>
+            <p><strong>{{'Num_SIRET' | translate}} :</strong> 93463264700012</p>
+            <p><strong>{{'Code_APE' | translate}} :</strong> 8560Z</p>
+        </section>
+
+        <!-- Conditions Générales de Vente -->
+        <section *ngIf="selectedSection === 'cgv'">
+            <h2>{{'Conditions' | translate}} ({{'CGV' | translate}})</h2>
+            <hr>
+            <h3>1. {{'Objet' | translate}}</h3>
+            <p>{{'Objet_desc' | translate}}</p>
+
+            <h3>2. {{'Acceptation' | translate}}</h3>
+            <p>{{'Acceptation_desc' | translate}}</p>
+
+            <h3>3. {{'Produits' | translate}}</h3>
+
+            <ul>
+                <p>
+                    <li>
+                        <strong>{{'service_title_1' | translate}} :</strong>
+                        {{'service_title_1_desc' | translate}}
+                    </li>
+                    <li>
+                        <strong>{{'service_title_2' | translate}} :</strong>
+                        {{'service_title_2_desc' | translate}}
+                    </li>
+                    <li>
+                        <strong>{{'service_title_3' | translate}} :</strong>
+                        {{'service_title_3_desc' | translate}}
+                    </li>
+                    <li>
+                        <strong>{{'service_title_4' | translate}} :</strong>
+                        {{'service_title_4_desc' | translate}}
+                    </li>
+                    <li>
+                        <strong>{{'service_title_5' | translate}} :</strong>
+                        {{'service_title_5_desc' | translate}}
+                    </li>
+                </p>
+            </ul>
+
+            <h3>4. {{'Devis' | translate}}</h3>
+            <p>{{'Devis_desc' | translate}}</p>
+
+            <h3>5. {{'Commande' | translate}}</h3>
+            <p>{{'Commande_desc' | translate}}</p>
+            <ul>
+                <li>{{'Commande_desc_1' | translate}}</li>
+                <li>{{'Commande_desc_2' | translate}}</li>
+                <li>{{'Commande_desc_3' | translate}}</li>
+            </ul>
+            <p>{{'Commande_desc_4' | translate}}</p>
+
+            <h3>6. {{'Paiement' | translate}}</h3>
+            <p>{{'Paiement_desc' | translate}}</p>
+
+            <h3>7. {{'Rétractation' | translate}}</h3>
+            <p>{{'Rétractation_desc' | translate}}</p>
+
+            <h3>8. {{'Responsabilité' | translate}}</h3>
+            <p>{{'Responsabilité_desc' | translate}}</p>
+
+            <h3>9. {{'Litiges' | translate}}</h3>
+            <p>{{'Litiges_desc' | translate}}</p>
+
+            <h3>10. {{'Modifications' | translate}}</h3>
+            <p>{{'Devis_desc' | translate}}</p>
+        </section>
+
+        <!-- Politique de Confidentialité -->
+        <section *ngIf="selectedSection === 'confidentialite'">
+            <h2>{{'Politiques' | translate}}</h2>
+            <hr>
+            <h3>1. {{'Collecte' | translate}}</h3>
+            <p>{{'Collecte_desc' | translate}}</p>
+
+            <h3>2. {{'Utilisation' | translate}}</h3>
+            <p>{{'Utilisation_desc' | translate}} :</p>
+            <ul>
+                <li>{{'Utilisation_desc_1' | translate}}</li>
+                <li>{{'Utilisation_desc_2' | translate}}</li>
+                <li>{{'Utilisation_desc_3' | translate}}</li>
+            </ul>
+
+            <h3>3. {{'Partage' | translate}}</h3>
+            <p>{{'Partage_desc' | translate}}</p>
+
+            <h3>4. {{'Durée' | translate}}</h3>
+            <p>{{'Durée_desc' | translate}}</p>
+
+            <h3>5. {{'Sécurité' | translate}}</h3>
+            <p>{{'Sécurité_desc' | translate}}</p>
+
+            <h3>6. {{'Droits' | translate}}</h3>
+            <p>{{'Droits_desc' | translate}} <a href="mailto:contact@dijanov.com">contact&#64;dijanov.com</a>.</p>
+
+            <h3>7. {{'Cookies' | translate}}</h3>
+            <p>{{'Cookies_desc' | translate}}</p>
+
+            <h3>8. {{'Modifications_pc' | translate}}</h3>
+            <p>{{'Modifications_pc_desc' | translate}}</p>
+        </section>
+    </div>
+</div>

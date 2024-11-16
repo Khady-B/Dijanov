@@ -28,6 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardDetailComponent } from './components/card-detail/card-detail.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LegalModalComponent } from './components/legal-modal/legal-modal.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -51,7 +53,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     CardsComponent,
     CardDetailComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent,
+    LegalModalComponent
   ],
   imports: [
     BrowserModule,

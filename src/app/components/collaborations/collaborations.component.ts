@@ -79,4 +79,8 @@ export class CollaborationsComponent {
     this.width = this.cardRef.nativeElement.offsetWidth;
     this.height = this.cardRef.nativeElement.offsetHeight;
   }
+
+  openLink(url: string): void {
+    window.location.href = url;
+  }
 }

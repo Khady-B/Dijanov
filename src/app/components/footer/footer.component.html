@@ -1,0 +1,39 @@
+<footer class="footer">
+    <div class="footer-content">
+        <section class="footer-section">
+            <a (click)="openLegalModal('mentions')">
+                {{'Mentions' | translate}}
+            </a>
+            <p class="line"></p>
+            <a (click)="openLegalModal('cgv')">
+                {{'Conditions' | translate}}
+            </a>
+            <p class="line"></p>
+            <a (click)="openLegalModal('confidentialite')">
+                {{'Politiques' | translate}}
+            </a>
+        </section>
+    </div>
+    <div class="footer-contact">
+        <section>
+            <a class="contact" href="mailto:contact@dijanov.com">
+                {{'Contact' | translate}}
+            </a>
+            <br>
+            <br>
+            <a class="logo" href="#" routerLink="/">
+                <img id="logo" src="assets/img/Dijanov_Icon_n.png" alt="dijanov" draggable="false" height="30" />
+            </a>
+        </section>
+    </div>
+    <app-legal-modal *ngIf="isModalOpen" [selectedSection]="selectedSection" (close)="closeLegalModal()">
+    </app-legal-modal>
+    <!-- <div class="footer-content"> -->
+    <!-- <section class="footer-section"> -->
+    <!-- <a (click)="openLegalModal()">Mentions légales</a> -->
+    <!-- Autres informations de contact -->
+    <!-- </section> -->
+    <!-- </div> -->
+    <!-- Afficher le modal si `isModalOpen` est true -->
+    <!-- <app-legal-modal *ngIf="isModalOpen" (close)="closeLegalModal()"></app-legal-modal> -->
+</footer>

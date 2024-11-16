@@ -1,0 +1,120 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    padding: 2% 2%;
+    margin: auto;
+    width: 100%; /* Utilisez 100% au lieu de 100vw pour éviter les débordements avec le scroll */
+    max-width: 100%; /* Prévenir tout dépassement */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    background-color: #5E01FD;
+    border: 5px solid #000000;
+    border-style: outset;
+    border-radius: 0.5%;
+    color: #ffffff;
+    box-sizing: border-box; /* Inclure padding et bordures dans la largeur/hauteur */
+    overflow: hidden; /* Évite les débordements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+/* .footer-section {
+    gap: 1rem;
+} */
+.footer-section a, .contact {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section a:hover {
+    background-color: white;
+    color: #5E01FD;
+}
+
+/* a {
+    word-wrap:normal;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify-all;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding-left: 1%;
+} */
+
+a:hover, a:active, select:hover {
+    background-color: white;
+    color: #5E01FD !important;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+    /* padding-left: 1%;
+    padding-right: 1%; */
+}
+
+.line, a {
+    display: inline;
+    font-weight: bold;
+}
+
+.line {
+    border-left: 2px solid rgb(255, 255, 255);    /* Couleur et épaisseur du trait */
+    height: 100px;    /* Hauteur de la ligne */
+    margin: 0 2vw;    /* Espacement autour de la ligne */
+}
+
+img {
+    border:inherit;
+    align-items: center;
+    justify-items: center;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.footer-contact, .logo {
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.logo:hover {
+    background-color: inherit !important;
+}
+
+@media screen and (max-width: 1020px) {
+    .line, a {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .line {
+        border-bottom: 2px solid rgb(255, 255, 255);    /* Couleur et épaisseur du trait */
+        height: 0px;    /* Hauteur de la ligne */
+        margin: 0 2vw;    /* Espacement autour de la ligne */
+    }
+}

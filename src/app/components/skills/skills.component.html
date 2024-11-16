@@ -4,12 +4,12 @@
         <hr>
         <div id="skills" class="card" data-state="#about" *ngFor="let item of skills">
             <h2 id="item">{{item.type | translate}}</h2>
-            <div id="skill" class="image border rounded-3 overflow-hidden" *ngFor="let skill of item.values">
+            <a id="skill" class="image border rounded-3 overflow-hidden" *ngFor="let skill of item.values" href="{{skill?.link}}">
                 <figure>
                     <img class="card" src="{{skill?.picture}}" alt="avatar" />
                     <figcaption class="card-title">{{skill?.title | translate}}</figcaption>
                 </figure>
-            </div>
+            </a>
         </div>
     </div>
 </div>

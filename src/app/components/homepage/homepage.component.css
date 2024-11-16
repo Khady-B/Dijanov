@@ -48,7 +48,7 @@
     text-align: center;
     line-height: 80px;
     letter-spacing: -2px;
-    width: 100vw;
+    width: 100%;
     /*word-wrap: break-word;*/
     height: fit-content;
   }
