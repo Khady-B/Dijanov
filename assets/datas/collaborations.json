@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "collaboration_title_1",
+        "picture": "./assets/img/collaborations/collaboration_KHS.png",
+        "description": "collaboration_description_1",
+        "link": "/services"
+    },
+    {
+        "id": 2,
+        "title": "collaboration_title_2",
+        "picture": "./assets/img/collaborations/collaboration_LFM.jpg",
+        "description": "collaboration_description_2",
+        "link": "https://www.lesfeesmarraines.fr/"
+    },
+    {
+        "id": 3,
+        "title": "collaboration_title_3",
+        "picture": "./assets/img/collaborations/collaboration_UFR.png",
+        "description": "collaboration_description_3",
+        "link": "https://sciences-techniques.univ-rouen.fr/"
+    },
+    {
+        "id": 43,
+        "title": "collaboration_title_4",
+        "picture": "./assets/img/collaborations/collaboration_NFS_CCI.jpg",
+        "description": "collaboration_description_3",
+        "link": "https://www.needfor-school.com/"
+    }
+]
+
