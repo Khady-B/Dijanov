@@ -10,7 +10,7 @@ import { LanguageService } from 'src/app/services/language.service';
 export class CardsComponent {
   services: any[] = [];
 
-  @ViewChild('card')
+  @ViewChild('card') 
   cardRef!: ElementRef;
 
   width: number = 0;

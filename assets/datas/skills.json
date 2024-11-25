@@ -1,0 +1,282 @@
+[
+    {
+        "type": "skill_type_1",
+        "values" : [
+            {
+                "id": 1,
+                "title": "C",
+                "picture": "./assets/img/skills/C_logo.png",
+                "link": "https://www.w3schools.com/c/"
+            },
+            {
+                "id": 2,
+                "title": "C++",
+                "picture": "./assets/img/skills/C++_logo.png",
+                "link": "https://isocpp.org/"
+            },
+            {
+                "id": 3,
+                "title": "C#",
+                "picture": "./assets/img/skills/C_sharp_logo.png",
+                "link": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+            },
+            {
+                "id": 4,
+                "title": "Go",
+                "picture": "./assets/img/skills/Go_logo.png",
+                "link": "https://go.dev/"
+            },
+            {
+                "id": 5,
+                "title": "Java",
+                "picture": "./assets/img/skills/Java_logo.jpg",
+                "link": "https://www.java.com/fr/"
+            },
+            {
+                "id": 6,
+                "title": "JavaScript",
+                "picture": "./assets/img/skills/JavaScript_logo.png",
+                "link": "https://www.w3schools.com/Js/"
+            },
+            {
+                "id": 7,
+                "title": "TypeScript",
+                "picture": "./assets/img/skills/TypeScript_logo.jpg",
+                "link": "https://www.typescriptlang.org/"
+            },
+            {
+                "id": 8,
+                "title": "OCaml",
+                "picture": "./assets/img/skills/OCaml_logo.png",
+                "link": "https://ocaml.org/"
+            },
+            {
+                "id": 9,
+                "title": "PHP",
+                "picture": "./assets/img/skills/PHP_logo.png",
+                "link": "https://www.php.net/"
+            },
+            {
+                "id": 10,
+                "title": "Python",
+                "picture": "./assets/img/skills/Python_logo.jpg",
+                "link": "https://www.python.org/"
+            },
+            {
+                "id": 11,
+                "title": "Scala",
+                "picture": "./assets/img/skills/Scala_logo.png",
+                "link": "https://www.scala-lang.org/"
+            },
+            {
+                "id": 12,
+                "title": "UML",
+                "picture": "./assets/img/skills/UML_logo.png",
+                "link": "https://www.uml.org/"
+            },
+            {
+                "id": 13,
+                "title": "XML",
+                "picture": "./assets/img/skills/XML_logo.png",
+                "link": "https://www.w3schools.com/xml/"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_2",
+        "values" : [
+            {
+                "id": 1,
+                "title": "CSS",
+                "picture": "./assets/img/skills/CSS_logo.jpg",
+                "link": "https://www.w3schools.com/Css/"
+            },
+            {
+                "id": 2,
+                "title": "HTML",
+                "picture": "./assets/img/skills/HTML_logo.jpg",
+                "link": "https://www.w3schools.com/html/"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_3",
+        "values" : [
+            {
+                "id": 1,
+                "title": "GraphQL",
+                "picture": "./assets/img/skills/GraphQL_logo.png",
+                "link": "https://graphql.org/"
+            },
+            {
+                "id": 2,
+                "title": "MongoDB",
+                "picture": "./assets/img/skills/NoSQL_logo.png",
+                "link": "https://www.mongodb.com/"
+            },
+            {
+                "id": 3,
+                "title": "PostgreSQL",
+                "picture": "./assets/img/skills/PostgreSQL_logo.png",
+                "link": "https://www.postgresql.org/"
+            },
+            {
+                "id": 4,
+                "title": "SQL",
+                "picture": "./assets/img/skills/SQL_logo.jpg",
+                "link": "https://sql.sh/"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_4",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Angular",
+                "picture": "./assets/img/skills/Angular_logo.png",
+                "link": "https://angular.dev/"
+            },
+            {
+                "id": 2,
+                "title": "Django",
+                "picture": "./assets/img/skills/Django_logo.png",
+                "link": "https://www.djangoproject.com/"
+            },
+            {
+                "id": 3,
+                "title": "React",
+                "picture": "./assets/img/skills/React_logo.png",
+                "link": "https://fr.legacy.reactjs.org/"
+            },
+            {
+                "id": 4,
+                "title": "Spring Boot",
+                "picture": "./assets/img/skills/Spring-boot_logo.png",
+                "link": "https://spring.io/projects/spring-boot"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_5",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Canva",
+                "picture": "./assets/img/skills/Canva_logo.png",
+                "link": "https://www.canva.com/"
+            },
+            {
+                "id": 2,
+                "title": "Draw.io",
+                "picture": "./assets/img/skills/Draw.io_logo.png",
+                "link": "https://www.drawio.com/"
+            },
+            {
+                "id": 3,
+                "title": "Lucidchart",
+                "picture": "./assets/img/skills/Lucidchart_logo.png",
+                "link": "https://www.lucidchart.com/pages/fr/landing?utm_source=bing&utm_medium=cpc&utm_campaign=_chart_fr_allcountries_mixed_search_brand_exact_&km_CPC_CampaignId=369475290&km_CPC_AdGroupID=1240249291937118&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID={extensionid}&km_CPC_Network=o&km_CPC_AdPosition=&km_CPC_Creative=&km_CPC_TargetID=kwd-77515723735585:loc-66&km_CPC_Country=188592&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&mkt_query=lucidchart&msclkid=c0717f6617c511335ed918569a040546"
+            },
+            {
+                "id": 4,
+                "title": "Visual Paradigm",
+                "picture": "./assets/img/skills/Visual-Paradigm_logo.png",
+                "link": "https://www.visual-paradigm.com/"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_6",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Jira",
+                "picture": "./assets/img/skills/Jira_logo.png",
+                "link": "https://www.atlassian.com/fr/software/jira"
+            },
+            {
+                "id": 2,
+                "title": "Trello",
+                "picture": "./assets/img/skills/Trello_logo.png",
+                "link": "https://trello.com/fr"
+            },
+            {
+                "id": 3,
+                "title": "YouTrack",
+                "picture": "./assets/img/skills/YouTrack_logo.png",
+                "link": "https://www.jetbrains.com/fr-fr/youtrack/?msclkid=bac2efd1231a12bc0da888e1ae22de2c&utm_source=bing&utm_medium=cpc&utm_campaign=EMEA_fr_DC_YouTrack_Branded&utm_term=youtrack&utm_content=youtrack"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_7",
+        "values" : [
+            {
+                "id": 1,
+                "title": "IVR Designer",
+                "picture": "./assets/img/skills/IVR-Designer_logo.png",
+                "link": "https://cas.prosodie.com/cas/login?service=https%3A%2F%2Fivr-designer.prosodie.com%2Fodigoivr%2Fapi%2Flatest%2Fauth%2Flogin%3Fpage%3Dhttps%253A%252F%252Fivr-designer.prosodie.com%252F"
+            },
+            {
+                "id": 2,
+                "title": "Illuin Dialogue",
+                "picture": "./assets/img/skills/Illuin-Dialogue_logo.png",
+                "link": "https://talk.illuin.tech/illuin-dialogue/"
+            }
+        ]
+    },
+    {
+        "type": "skill_type_8",
+        "values" : [
+            {
+                "id": 1,
+                "title": "Docker",
+                "picture": "./assets/img/skills/Docker_logo.png",
+                "link": "https://www.docker.com/"
+            },
+            {
+                "id": 2,
+                "title": "Eclipse",
+                "picture": "./assets/img/skills/Eclipse_logo.png",
+                "link": "https://www.eclipse.org/"
+            },
+            {
+                "id": 3,
+                "title": "Git",
+                "picture": "./assets/img/skills/Git_logo.png",
+                "link": "https://git-scm.com/"
+            },
+            {
+                "id": 4,
+                "title": "GitHub",
+                "picture": "./assets/img/skills/GitHub_logo.png",
+                "link": "https://github.com/"
+            },
+            {
+                "id": 5,
+                "title": "Gitlab",
+                "picture": "./assets/img/skills/Gitlab_logo.png",
+                "link": "https://about.gitlab.com/free-trial/devsecops/?utm_medium=cpc&utm_source=bing&utm_campaign=brand_emea_pr_rsa_br_exact&utm_content=%2Ffree-trial%2Fdevsecops%2F&_bt&_bk=gitlab&_bm=e&_bn=o&_bg=1328211696466798&msclkid=c58fd439663110036e91b309edb245cd"
+            },
+            {
+                "id": 6,
+                "title": "IntelliJ",
+                "picture": "./assets/img/skills/IntelliJ-IDEA_logo.png",
+                "link": "https://lp.jetbrains.com/intellij-idea-promo/?msclkid=364350bef17b1f478ad8378e7a2c3514&utm_source=bing&utm_medium=cpc&utm_campaign=EMEA_en_FR_IDEA_Branded&utm_term=intellij&utm_content=intellij%20idea"
+            },
+            {
+                "id": 7,
+                "title": "Jenkins",
+                "picture": "./assets/img/skills/Jenkins_logo.png",
+                "link": "https://www.jenkins.io/"
+            },
+            {
+                "id": 8,
+                "title": "VS Code",
+                "picture": "./assets/img/skills/VSCode_logo.png",
+                "link": "https://code.visualstudio.com/"
+            }
+        ]
+    }
+]

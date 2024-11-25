@@ -2,6 +2,7 @@
 
 html {
     -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
+    text-size-adjust: none;
 }
 
 @media screen and (max-width: 3000px) {

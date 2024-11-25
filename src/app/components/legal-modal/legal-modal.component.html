@@ -1,7 +1,9 @@
 <div class="modal">
     <div #modalContent class="modal-content">
         <span class="close" (click)="closeModal()">&times;</span>
-        
+        <div #modalContent class="logo">
+            <img id="logo" src="assets/img/Dijanov_Icon_n.png" alt="dijanov" draggable="false" height="30" />
+        </div>
          <!-- Mentions Légales -->
         <section *ngIf="selectedSection === 'mentions'">
             <h2>{{'Mentions' | translate}}</h2>

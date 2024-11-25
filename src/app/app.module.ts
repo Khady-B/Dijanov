@@ -33,7 +33,7 @@ import { LegalModalComponent } from './components/legal-modal/legal-modal.compon
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/datas/', '.json');
+  return new TranslateHttpLoader(http, 'assets/datas/', '.json');
 }
 
 @NgModule({

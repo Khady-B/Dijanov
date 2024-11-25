@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 <section class="hero-section">
-  <div class="card-grid">
+  <div #card class="card-grid">
     <a class="card" *ngFor="let service of services" (click)="openDetail(service)">
       <div class="card__background" style="background-image: url({{service?.picture}})"></div>
       <div class="card__content">

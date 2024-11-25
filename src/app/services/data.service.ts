@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private servicesUrl = './assets/datas/services.json';
-  private collaborationsUrl = './assets/datas/collaborations.json';
-  private articlesUrl = './assets/datas/articles.json';
-  private skillsUrl = './assets/datas/skills.json';
+  private servicesUrl = 'assets/datas/services.json';
+  private collaborationsUrl = 'assets/datas/collaborations.json';
+  private articlesUrl = 'assets/datas/articles.json';
+  private skillsUrl = 'assets/datas/skills.json';
 
   constructor(private http: HttpClient) { }
 
