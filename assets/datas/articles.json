@@ -1,14 +1,14 @@
 [
     { 
         "title": "article_title_1",
-        "url": "./assets/img/articles/Développeuse_au-delà_du_code.mp4",
+        "url": "assets/img/articles/Développeuse_au-delà_du_code.mp4",
         "type": "video",
         "description": "article_description_1"
 
     },
     { 
         "title": "article_title_2",
-        "url": "./assets/img/articles/Bien_choisir_son_langage_de_programmation.mp4",
+        "url": "assets/img/articles/Bien_choisir_son_langage_de_programmation.mp4",
         "type": "video",
         "description": "article_description_2"
     }
