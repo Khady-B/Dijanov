@@ -27,7 +27,7 @@ export class CardsComponent {
 
   ngOnInit(): void {
     this.dataService.getDataServices().subscribe((response) => {
-      this.services = response;
+      this.services = response.sort((a, b) => a.id - b.id);
     });
   }
 
