@@ -12,6 +12,7 @@
             <a (click)="openLegalModal('confidentialite')">
                 {{'Politiques' | translate}}
             </a>
+            <p class="line-contact"></p>
         </section>
     </div>
     <div class="footer-contact">
@@ -22,11 +23,11 @@
             <br>
             <br>
             <a class="logo" href="#" routerLink="/">
-                <img id="logo" src="assets/img/Dijanov_Icon_n.png" alt="dijanov" draggable="false" height="30" />
+                <img id="logo" src="assets/img/Dijanov_Icon_b_fb.png" alt="dijanov" draggable="false" height="30" />
             </a>
         </section>
     </div>
-    <app-legal-modal *ngIf="isModalOpen" [selectedSection]="selectedSection" (close)="closeLegalModal()">
+    <app-legal-modal #legalModal *ngIf="isModalOpen" [selectedSection]="selectedSection" (click)="closeLegalModal($event)" (close)="closeLegalModal()">
     </app-legal-modal>
     <!-- <div class="footer-content"> -->
     <!-- <section class="footer-section"> -->

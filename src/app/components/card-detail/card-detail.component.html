@@ -1,5 +1,5 @@
 <div class="modal">
-    <div #modalContent class="modal-content">
+    <div #modalContent class="modal-content" (click)="$event.stopPropagation()">
         <span class="close" (click)="closeModal()">&times;</span>
         <h2>{{service?.title | translate}}</h2>
         <img [src]="service?.picture" alt="{{service?.title | translate}}" />

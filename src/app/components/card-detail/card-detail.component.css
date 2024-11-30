@@ -28,7 +28,7 @@ img {
     /*max-height: 86vh;*/
     /* Could be more or less, depending on screen size */
     transition: all 0.3s ease; /* Transition pour rendre les ajustements plus fluides */
-    cursor: move; /* Indicateur visuel pour montrer que l'élément est déplaçable */
+    cursor: default; /* Indicateur visuel pour montrer que l'élément est déplaçable */
 }
 
 .modal-content::after(.close) {

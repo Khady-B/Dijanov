@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 10;
     margin-bottom: 8%;
-    animation: slidein 2s;
+    animation: slidein 0.3s;
   }
 
   nav {

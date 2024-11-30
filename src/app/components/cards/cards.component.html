@@ -9,6 +9,6 @@
         <h3 class="card__heading">{{service?.title | translate}}</h3>
       </div>
     </a>
-    <app-card-detail *ngIf="selectedService" [service]="selectedService" (close)="closeDetail()"></app-card-detail>
+    <app-card-detail *ngIf="isDetailOpen" [service]="selectedService"  (click)="closeDetail($event)" (close)="closeDetail()"></app-card-detail>
   </div>
 </section>

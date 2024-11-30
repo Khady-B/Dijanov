@@ -81,6 +81,13 @@ a:hover, a:active, select:hover {
     margin: 0 2vw;    /* Espacement autour de la ligne */
 }
 
+.line-contact {
+    border-bottom: 2px solid #5E01FD ;    /* Couleur et épaisseur du trait */
+    height: 0px;    /* Hauteur de la ligne */
+    margin: 0 0.8vw;    /* Espacement autour de la ligne */
+    margin-top: 2%;
+}
+
 img {
     border:inherit;
     align-items: center;
@@ -105,7 +112,11 @@ img {
     background-color: inherit !important;
 }
 
-@media screen and (max-width: 1020px) {
+hr {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1030px) {
     .line, a {
         display: block;
         font-weight: bold;
@@ -116,5 +127,10 @@ img {
         border-bottom: 2px solid rgb(255, 255, 255);    /* Couleur et épaisseur du trait */
         height: 0px;    /* Hauteur de la ligne */
         margin: 0 2vw;    /* Espacement autour de la ligne */
+    }
+
+    .line-contact {
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin-top: 0;
     }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  @ViewChild('legalModal', { static: false }) legalModal!: ElementRef;
   isModalOpen = false;
-
   selectedSection: string | null = null;
 
   openLegalModal(section: string): void {
@@ -15,9 +15,12 @@ export class FooterComponent {
     this.isModalOpen = true;
   }
 
-  closeLegalModal(): void {
+  closeLegalModal(event?: Event): void {
     this.isModalOpen = false;
     this.selectedSection = null;
+    if (event) {
+      event.stopPropagation(); // Empêche la propagation du clic à la modale
+    }
   }
   // openLegalModal(): void {
   //   this.isModalOpen = true;
@@ -26,4 +29,5 @@ export class FooterComponent {
   // closeLegalModal(): void {
   //   this.isModalOpen = false;
   // }
+  
 }

@@ -28,5 +28,11 @@
         "title": "service_title_5",
         "picture": "assets/img/services/service_formation.jpg",
         "description": "service_description_5"
+    },
+    {
+        "id": 6,
+        "title": "service_title_6",
+        "picture": "assets/img/services/service_gp.jpg",
+        "description": "service_description_6"
     }
 ]

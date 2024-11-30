@@ -1,8 +1,8 @@
 <div class="modal">
-    <div #modalContent class="modal-content">
+    <div #modalContent class="modal-content" (click)="$event.stopPropagation()">
         <span class="close" (click)="closeModal()">&times;</span>
         <div #modalContent class="logo">
-            <img id="logo" src="assets/img/Dijanov_Icon_n.png" alt="dijanov" draggable="false" height="30" />
+            <img id="logo" src="assets/img/Dijanov_Icon_b_fb.png" alt="dijanov" draggable="false" height="30" />
         </div>
          <!-- Mentions Légales -->
         <section *ngIf="selectedSection === 'mentions'">

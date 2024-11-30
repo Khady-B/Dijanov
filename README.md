@@ -45,3 +45,9 @@ Run `ng build --configuration production --base-href "https://Khady-B.github.io/
 ## Déployez sur GitHub Pages
 
 Run `npx angular-cli-ghpages --dir=dist/Dijanov`
+
+
+## Déployer sur Dijanov.com
+
+Run `ng build --configuration production --base-href https://dijanov.com/`
+Run `npx angular-cli-ghpages --dir=dist/Dijanov`
