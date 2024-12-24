@@ -26,6 +26,8 @@ html {
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
+        border: none !important;
+        width: min-content
     }
 
     #collaboration.card {
@@ -63,7 +65,7 @@ html {
     }
 
     #card:hover {
-        box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Effet de survol lumineux */
         border: 1px solid #5E01FD; /* Accentuer la bordure */
     }
 
@@ -109,6 +111,7 @@ html {
         position: relative;
         background-position: center;
         display: flex;
+        margin-top: 3%;
     }
 
     .card-title {

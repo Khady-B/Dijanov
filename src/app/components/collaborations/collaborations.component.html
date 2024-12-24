@@ -5,8 +5,9 @@
     <div id="collaborations" class="cards" data-state="#about">
       <div id="collaboration" class="image border rounded-3 overflow-hidden" *ngFor="let collaboration of collaborations">
         <a class="card" id="card" href="{{collaboration?.link}}">
-          <div class="card-cover" style="background-image: url('{{collaboration?.picture}}')"></div>
-          <img class="card-avatar" src="{{collaboration?.picture}}" alt="avatar" />
+          <!-- <div class="card-cover" style="background-image: url('{{collaboration?.picture}}')"></div> -->
+          <div class="card-cover"></div>
+          <img class="card-avatar" src="{{collaboration?.picture}}" alt="{{collaboration?.title | translate}}" />
           <h1 class="card-title">{{collaboration?.title | translate}}</h1>
           <div class="card-content">
               <h2 class="card-subtitle"></h2>

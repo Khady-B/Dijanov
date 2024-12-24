@@ -26,6 +26,8 @@ html {
         margin: 1vw;
         justify-content: center;
         display: inline-flex;
+        border: none !important;
+        width: min-content
     }
 
     #service.card {
@@ -63,7 +65,7 @@ html {
     }
 
     #card:hover {
-        box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Effet de survol lumineux */
         border: 1px solid #5E01FD; /* Accentuer la bordure */
     }
 
@@ -109,6 +111,7 @@ html {
         position: relative;
         background-position: center;
         display: flex;
+        margin-top: 3%;
     }
 
     .card-title {
@@ -265,4 +268,14 @@ html {
         text-align: left;
     }
     
+    button {
+        /* color: #5E01FD;
+        border-color: #5E01FD; */
+        margin-bottom: 3%;
+        border-radius: 10px;
+    }
+
+    /* button:hover {
+        background-color: #5E01FD;
+    } */
 }

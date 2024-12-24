@@ -6,7 +6,8 @@
     <div id="services" class="cards" data-state="#about">
       <div id="service" class="image border rounded-3 overflow-hidden" *ngFor="let service of services">
         <div class="card" id="card">
-          <div class="card-cover" style="background-image: url('{{service?.picture}}')"></div>
+          <!-- <div class="card-cover" style="background-image: url('{{service?.picture}}')"></div> -->
+          <div class="card-cover"></div>
           <img class="card-avatar" src="{{service?.picture}}" alt="avatar" />
           <h1 class="card-title">{{service?.title | translate}}</h1>
           <div class="card-content">
@@ -19,6 +20,7 @@
                 <li>{{'Formation_4'  | translate}}</li>
               </ul>
           </div>
+          <button type="button" class="btn btn-outline-dark btn-rounded" mdbRipple rippleColor="dark" (click)="goToContact(service?.id)">{{'Infos_Services'  | translate}}</button>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-detail',
@@ -11,6 +12,11 @@ export class CardDetailComponent {
 
   @ViewChild('modalContent', { static: true }) modalContent!: ElementRef;
 
+  constructor(private router: Router) { }
+
+  goToContact(serviceId: number): void {
+    this.router.navigate(['/contact'], { queryParams: { service: serviceId } });
+  }
   // private isDragging = false;
   // private initialMouseX = 0;
   // private initialMouseY = 0;

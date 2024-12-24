@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { SafeUrl, DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { ContactService } from 'src/app/services/contact.service';
 
@@ -15,32 +16,38 @@ export class ContactComponent {
   errorMessage: string = '';
   selectedFiles: File[] | null = null;
 
-  constructor(private translate: TranslateService, private fb: FormBuilder, private contactService: ContactService) {
+  constructor(private route: ActivatedRoute, private translate: TranslateService, private fb: FormBuilder, private contactService: ContactService) {
     this.contactForm = this.fb.group({
       lastName: ['', [Validators.required, Validators.maxLength(255)]],
       firstName: ['', [Validators.required, Validators.maxLength(255)]],
       email: ['', [Validators.required, Validators.email, Validators.maxLength(255)]],
       tel: [''],
-      service: ['', Validators.required],
+      service: ['1', Validators.required],
       message: ['', Validators.required],
       file: null
     });
   }
 
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params) => {
+      const selectedService = params['service'];
+      if (selectedService) {
+        this.contactForm.patchValue({ service: selectedService });
+      }
+    });
+  }
+  
   onFileChange(event: any): void {
     const input = event.target as HTMLInputElement;
-
     if (!input || !input.files) {
       return;
     }
-
     const files = Array.from(input.files);
     if (files.length > 0) {
       this.selectedFiles = files.filter(file => this.validFileType(file));
     } else {
       this.selectedFiles = null;
     }
-
     this.updatePreview(input.files);
   }
 
@@ -63,7 +70,20 @@ export class ContactComponent {
 
       Array.from(files).forEach((file) => {
         const listItem = document.createElement("li");
+          listItem.style.display = "flex";
+          listItem.style.alignItems = "center";
+          listItem.style.justifyContent = "space-between";
         const para = document.createElement("p");
+          const removeButton = document.createElement("button");
+          removeButton.id = "remove";
+          removeButton.textContent = "✖";
+          removeButton.style.border = "none";
+          removeButton.style.background = "none";
+          removeButton.style.cursor = "pointer";
+          removeButton.style.color = "black";
+          removeButton.style.marginLeft = "10px";
+
+          removeButton.addEventListener("click", () => this.removeFile(file));
 
         if (this.validFileType(file)) {
           para.textContent = `${file.name} (${this.returnFileSize(file.size)})`;
@@ -72,6 +92,7 @@ export class ContactComponent {
         }
 
         listItem.appendChild(para);
+          listItem.appendChild(removeButton);
         list.appendChild(listItem);
       });
     }
@@ -157,5 +178,29 @@ export class ContactComponent {
         this.errorMessage = this.translate.instant('Message_erreur');
       }
     );
+  }
+
+  removeFile(file: File): void {
+    if (this.selectedFiles) {
+      this.selectedFiles = this.selectedFiles.filter((f) => f !== file);
+    }
+  }
+
+  saveFiles(): void {
+    if (this.selectedFiles) {
+      this.selectedFiles.forEach((file) => {
+        const reader = new FileReader();
+        reader.onload = (event: ProgressEvent<FileReader>) => {
+          const result = event.target?.result;
+          if (result) {
+            localStorage.setItem(file.name, result.toString());
+            console.log(`Fichier ${file.name} enregistré localement.`);
+          }
+        };
+        reader.readAsDataURL(file); // Stocke le fichier encodé en Base64
+      });
+      alert('Les fichiers ont été enregistrés localement.');
+      this.selectedFiles = null; // Réinitialise la sélection
+    }
   }
 }

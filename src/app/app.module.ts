@@ -30,6 +30,7 @@ import { CardDetailComponent } from './components/card-detail/card-detail.compon
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LegalModalComponent } from './components/legal-modal/legal-modal.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -55,7 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardDetailComponent,
     SkillsComponent,
     FooterComponent,
-    LegalModalComponent
+    LegalModalComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

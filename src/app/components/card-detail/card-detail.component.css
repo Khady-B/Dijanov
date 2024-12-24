@@ -14,6 +14,7 @@ img {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .modal-content {
@@ -29,6 +30,9 @@ img {
     /* Could be more or less, depending on screen size */
     transition: all 0.3s ease; /* Transition pour rendre les ajustements plus fluides */
     cursor: default; /* Indicateur visuel pour montrer que l'élément est déplaçable */
+    overflow-y: auto;
+    max-height: 80vh;
+
 }
 
 .modal-content::after(.close) {
@@ -97,4 +101,11 @@ p {
 li {
     font-size: small;
     text-align: left;
+}
+
+button {
+    margin-bottom: 1%;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
 }

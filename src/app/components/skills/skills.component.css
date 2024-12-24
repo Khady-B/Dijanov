@@ -96,7 +96,7 @@
     }
 
     #skill:hover .card {
-        box-shadow: 0 0 20px 5px rgba(94, 1, 253, 0.7); /* Effet de survol lumineux */
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Effet de survol lumineux */
         -webkit-transform: translateY(-14px) scale(1.04);
                 transform: translateY(-14px) scale(1.04);
     }
@@ -120,7 +120,7 @@
         text-align: center;
         font-size: 18px;
         font-weight:bolder;
-        color: #5E01FD;
+        color: #000000;
         display: block;
         word-wrap: break-word;
     }

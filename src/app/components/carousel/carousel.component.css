@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+html {
+    -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
+}
+
+@media screen and (max-width: 3000px) {
+
+    * {
+        box-sizing: border-box;
+        color: #000000;
+        border-color: #000000;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .carousel-inner {
+        padding: 15%;
+        height: 55vh;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    img {
+        min-width: 200px;
+        min-height: 200px;
+        text-align: center;
+        /* padding: 30%; */
+        /* padding-top: 8%; */
+        /* padding-left: 8%; */
+        /* padding-right: 8%; */
+        /* padding-bottom: 8%; */
+        margin-bottom: 7%;
+        border-color: rgb(0, 0, 0);
+    }
+
+    #button {
+        background-color: #000000;
+    }
+
+    /* button, span, icon {
+        color: #000 !important;
+        background-color: #000;
+    } */
+
+
+    #carousel {
+        margin: auto;
+        /* bottom: 0;     */
+        position: relative;
+        left: 0;
+        
+    }
+
+    #collaborationCarousel {
+        width: 40vh;
+        text-align: center;
+        margin: auto;
+        border: 1px solid #000000;
+        border-radius: 5%;
+        margin-bottom: 5%;
+    }
+
+    h1, p {
+        /* margin: 90%; */
+        position: relative;
+        margin: auto ;
+    }
+
+}

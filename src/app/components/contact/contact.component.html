@@ -1,19 +1,20 @@
+<app-navbar></app-navbar>
 <div class="container-md">
     <div class="mb-4">
-      <div class="contact-container" style="background-image: url(assets/img/Dijanov_logo_cover_2.png);">
-        <h1 id="title">Contact</h1>
+      <h1 id="title">Contact</h1>
         <hr>
+      <div class="contact-container">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
           <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
           <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
-          <div class="form-group mb-2">
+          <div class="header1">
             <input type="text" class="form-control" id="lastName" name="lastName"
             placeholder="{{'Nom' | translate}} *" required maxlength="255" formControlName="lastName" />
   
             <input type="text" class="form-control" id="firstName" name="firstName"
             placeholder="{{'Prénom' | translate}} *" required maxlength="255" formControlName="firstName" />
           </div>
-          <div class="form-group mb-2">
+          <div class="header2">
             <input type="email" class="form-control" id="email" name="email"
             placeholder="Email *" required maxlength="255" formControlName="email" />
   
@@ -23,30 +24,41 @@
           <div class="form-group  mb-2">
             <label for="service">{{'Sujet' | translate}} *</label>
             <select name="service" id="service" class="form-control" formControlName="service" required>
-              <option value="web_site">{{'service_title_1' | translate}}</option>
-              <option value="game">{{'service_title_2' | translate}}</option>
-              <option value="logiciel">{{'service_title_3' | translate}}</option>
-              <option value="logo">{{'service_title_4' | translate}}</option>
-              <option value="formation">{{'service_title_5' | translate}}</option>
+              <option value="1">{{'service_title_1' | translate}}</option>
+              <option value="3">{{'service_title_2' | translate}}</option>
+              <option value="6">{{'service_title_3' | translate}}</option>
+              <option value="2">{{'service_title_4' | translate}}</option>
+              <option value="4">{{'service_title_5' | translate}}</option>
+              <option value="5">{{'service_title_6' | translate}}</option>
               <option value="other">{{'Autre' | translate}}</option>
             </select>
           </div>
-          <div class="form-group  mb-2">
+          <!-- <div class="form-group  mb-2">
             <label for="file" >Documents </label>
             <label class="files" for="file" >{{'Choix' | translate}}</label>
-            <input type="file" id="file" name="file" title="{{'Choix' | translate}}"
-            multiple accept=".pdf,.doc,.docx,.jpg,.png" (change)="onFileChange($event)">
+            <input type="file" id="file" name="file" title="{{'Choix' | translate}}" multiple accept=".pdf,.doc,.docx,.jpg,.png" (change)="onFileChange($event)">
             <div class="preview">
               <p>{{'Choix_desc' | translate}}</p>
+            </div> -->
+            <!-- <div *ngIf="selectedFiles && selectedFiles.length > 0" class="preview">
+              <ol>
+                <li *ngFor="let file of selectedFiles">
+                  <p>{{'Choix_desc' | translate}}</p>
+                  {{ file.name }} ({{ returnFileSize(file.size) }})<button class="btn btn-dark" (click)="removeFile(file)">x</button>
+                  
+                </li>
+              </ol>
             </div>
-          </div>
+            <button *ngIf="selectedFiles" class="btn btn-dark" (click)="saveFiles()">Enregistrer localement</button>
+           -->
+          <!-- </div> -->
           <div class="form-group mb-2">
             <label for="message">Message *</label>
             <textarea class="form-control" id="message" name="message" formControlName="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Envoyer</button>
+          <button type="submit" class="btn btn-dark" [disabled]="contactForm.invalid">{{'Envoyer' | translate}}</button>
         </form>
       </div>
     </div>
   </div>
-  
+  <div class="jump"></div>
