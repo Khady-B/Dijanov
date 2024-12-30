@@ -4,6 +4,12 @@ html {
     -webkit-text-size-adjust: 100%; /* Désactiver le redimensionnement du texte */
 }
 
+@media screen and (max-width: 1000px) {
+  #collaboration {
+    width: auto !important
+  }
+}
+
 @media screen and (max-width: 3000px) {
 
     * {
@@ -80,7 +86,7 @@ html {
     .card-header * {
         transition: 0.3s;
     }
-    
+
     .card-cover {
         width: 100%;
         height: 100%;
@@ -268,5 +274,5 @@ html {
     a {
         text-decoration: none;
     }
-    
+
 }
