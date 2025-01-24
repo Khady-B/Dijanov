@@ -44,7 +44,7 @@ html {
         transition: 0.3s;
         border-radius: 10px;
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
-        border: 1px solid #5E01FD;
+        border: 1px solid #bababa;
         display: inline-block;
         align-content: center;
         align-items: center;
@@ -65,14 +65,15 @@ html {
         flex-direction:row;
         border-radius: 10px;
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
-        border: 1px solid #5E01FD;
+        border: 5px solid hsl(0, 0%, 92%);
         min-width: 30vw;
         max-width: 72vh;
+        border-style: outset;
     }
 
     #card:hover {
         box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Effet de survol lumineux */
-        border: 1px solid #5E01FD; /* Accentuer la bordure */
+        border: inherit; /* Accentuer la bordure */
     }
 
     .card-header {

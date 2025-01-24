@@ -45,7 +45,7 @@
     }
 
     #skills {
-        border: 1px solid #5E01FD;
+        border: 1px solid #bababa;
         align-content: center;
         align-items: center;
         justify-content: center;
@@ -93,6 +93,8 @@
         justify-content: center;
         justify-items: center;
         text-align: center;
+        border: 2px solid hsl(0, 0%, 92%);
+        border-style: outset;
     }
 
     #skill:hover .card {
