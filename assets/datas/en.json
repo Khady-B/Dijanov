@@ -3,7 +3,8 @@
     "Anglais": "EN",
     "Envoyer": "Send",
     "Accueil": "Home",
-    "Accroche": "Expertise & Support in Digital Solutions",    "Services": "Services",
+    "Accroche": "Expertise & Support in Digital Solutions",
+    "Services": "Services",
     "Rubriques": "Sections",
     "Infos_Services": "More information",
     "Collaborations": "Collaborations",
@@ -35,7 +36,7 @@
     "service_title_6_desc": "Support in structuring, planning and carrying out your projects with the method best suited to your needs.",
     "Vision": "Vision",
     "Vision_desc": "I believe in a future where technology improves everyday life and helps businesses and individuals achieve their goals.",
-    "Contactez-moi": "Contact Me",
+    "Contactez-moi": "Contact me",
     "Contactez-moi_desc": "Ready to bring your digital project to life? Contact me today to discuss your needs and see how I can help you achieve your goals.",
     "service_title_1": "Creating websites",
     "service_description_1": "We design tailor-made websites that are both aesthetic and functional. Whether it is a showcase site, a blog, or an online store, we adapt each project to your specific needs, with emphasis on ergonomics.",
@@ -73,6 +74,11 @@
     "article_description_1": "\n🚀 Developer Beyond Code 🚀 \nWelcome to my professional world, where programming is not just a line of code, but a multidimensional adventure! 👩🏽‍💻✨ \n\nIn this fascinating universe, I want to share with you the different types of developers who shape the digital landscape \n\nFrom the creativity of the frontend developer to the robustness of the backend, including the ingenuity of mobile developers and much more. others, each profile brings its unique touch to the art of development \n\nJoin me in this exploration where I share not only the nuances of these profiles, but also some of the technologies used 🌟 \n\n#DevWorld #WomenInDev. #TechInnovation \n#IAandTech #Digital #Programming #HelloWorld",
     "article_title_2": "Choose the right programming language",
     "article_description_2": "\n🚀 Galactic exploration of programming languages: how to choose the right programming language 🚀 \n\nI am often asked about different programming languages ​​and how to choose which one to use. How to know which is the best suitable for a project? Which language should I train in? 🤔 \n\nTo answer these many questions, I invite you to a galactic exploration of programming languages ​​🌌✨ Are you ready? \n\nThis excursion will guide you through a galaxy of languages, helping you choose the code star that best suits your needs and goals.\n\n#Programmation #Développement #Technologie #Carrière #Apprentissage #LangagesDeProgrammation",
+    
+    
+    "Values" : "Values",
+    "Send_mail" : "Send an email",
+    
     "Nom": "Name",
     "Prénom": "First Name",
     "Téléphone": "Phone Number",
