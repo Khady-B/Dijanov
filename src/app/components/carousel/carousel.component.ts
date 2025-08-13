@@ -12,6 +12,7 @@ export class CarouselComponent {
   collaboration1: any;
   collaboration2: any;
   collaboration3: any;
+  collaboration4: any;
   
   constructor(public languageService: LanguageService, private dataService: DataService) { }
 
@@ -20,6 +21,7 @@ export class CarouselComponent {
       this.collaboration1 = response[1];
       this.collaboration2 = response[2];
       this.collaboration3 = response[3];
+      this.collaboration4 = response[4];
       this.collaborations = response.filter(x => x != response[0]);
       // this.collaborations = response.filter(x => x != response[0]);
       

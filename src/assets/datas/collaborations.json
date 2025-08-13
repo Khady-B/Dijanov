@@ -21,11 +21,18 @@
         "link": "https://sciences-techniques.univ-rouen.fr/"
     },
     {
-        "id": 43,
+        "id": 4,
         "title": "collaboration_title_4",
         "picture": "assets/img/collaborations/collaboration_NFS_CCI.jpg",
-        "description": "collaboration_description_3",
+        "description": "collaboration_description_4",
         "link": "https://www.needfor-school.com/"
+    },
+    {
+        "id": 5,
+        "title": "collaboration_title_5",
+        "picture": "assets/img/collaborations/collaboration_NWS.jpg",
+        "description": "collaboration_description_5",
+        "link": "https://normandiewebschool.fr/"
     }
 ]
 

@@ -30,8 +30,8 @@
         </li>
         <li class="nav-item" id="language">
           <select #langSelect (change)="languageService.switchLanguage(langSelect.value)">
-            <option value="fr" [selected]="languageService.currentLanguage === 'fr'">{{'Français' | translate}}</option>
             <option value="en" [selected]="languageService.currentLanguage === 'en'">{{'Anglais' | translate}}</option>
+            <option value="fr" [selected]="languageService.currentLanguage === 'fr'">{{'Français' | translate}}</option>
           </select>
         </li>
       </ul>

@@ -62,6 +62,8 @@
     "collaboration_description_3": "UFR Sciences et techniques \n Département informatique \n Acteur majeur de la formation et de la recherche en Normandie.",
     "collaboration_title_4": "Need for School",
     "collaboration_description_4": "École numérique située au cœur de Rouen, spécialisée dans la formation aux métiers du développement web et de la communication digitale. Ils proposent une gamme de programmes allant du Bac+2 au Bac+5, incluant le développement web, le web design, la cybersécurité, et plus encore.",
+    "collaboration_title_5": "Normandie Web School",
+    "collaboration_description_5": "La Normandie Web School est une école supérieure située en Normandie, spécialisée dans la formation aux métiers du marketing digital, du web design, de la communication digitale et du développement web. Ses programmes sont accessibles en formation initiale ou en alternance, avec des Bachelors (Bac+3) et Masters (Bac+5)",
     "skill_type_1" : "Langages de programmation et de modélisation unifié",
     "skill_type_2" : "Technologies web",
     "skill_type_3" : "Bases de données",
@@ -85,6 +87,7 @@
     "Choix": "Choisir des fichiers",
     "Choix_desc": "Aucun fichier n'a été sélectionné",
     "Autre": "Autre",
+    "Select": "Sélectionner un service",
 
     "Mentions": "Mentions légales",
     "Conditions": "Conditions Générales de Vente",

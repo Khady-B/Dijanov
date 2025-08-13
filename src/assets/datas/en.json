@@ -62,6 +62,8 @@
     "collaboration_description_3": "UFR Sciences et techniques \n Département informatique \n A major player in training and research in Normandy.",
     "collaboration_title_4": "Need for School",
     "collaboration_description_4": "Digital school located in the heart of Rouen, specializing in training for web development and digital communication professions. They offer a range of programs from Bac+2 to Bac+5, including web development, web design, cybersecurity, and more.",
+    "collaboration_title_5": "Normandy Web School", 
+    "collaboration_description_5": "The Normandy Web School is a higher education institution located in Normandy, specializing in training for careers in digital marketing, web design, digital communication, and web development. Its programs are available in initial training or in work-study format, offering Bachelors (Bac+3) and Masters (Bac+5).",
     "skill_type_1" : "Unified programming and modeling languages",
     "skill_type_2" : "Web technologies",
     "skill_type_3" : "Databases",
@@ -86,6 +88,7 @@
     "Choix": "Choose files",
     "Choix_desc": "No file selected",
     "Autre": "Other",
+    "Select": "Select a service",
 
     "Mentions": "Legal notices",
     "Conditions": "General Conditions of Sale",

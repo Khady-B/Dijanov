@@ -22,8 +22,8 @@
             placeholder="{{'Téléphone' | translate}}" formControlName="tel" />
           </div>
           <div class="form-group  mb-2">
-            <label for="service">{{'Sujet' | translate}} *</label>
             <select name="service" id="service" class="form-control" formControlName="service" required>
+              <option value="" disabled selected>-- {{'Select' | translate}} --</option>
               <option value="1">{{'service_title_1' | translate}}</option>
               <option value="3">{{'service_title_2' | translate}}</option>
               <option value="6">{{'service_title_3' | translate}}</option>
@@ -53,8 +53,7 @@
            -->
           <!-- </div> -->
           <div class="form-group mb-2">
-            <label for="message">Message *</label>
-            <textarea class="form-control" id="message" name="message" formControlName="message" required></textarea>
+            <textarea class="form-control" id="message" name="message" formControlName="message" placeholder="Message *" required></textarea>
           </div>
           <button type="submit" class="btn btn-dark" [disabled]="contactForm.invalid">{{'Envoyer' | translate}}</button>
         </form>

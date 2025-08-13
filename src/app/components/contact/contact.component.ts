@@ -4,6 +4,7 @@ import { SafeUrl, DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { ContactService } from 'src/app/services/contact.service';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-contact',
@@ -15,26 +16,32 @@ export class ContactComponent {
   successMessage: string = '';
   errorMessage: string = '';
   selectedFiles: File[] | null = null;
+  services: any[] = [];
+  service: any;
+  serviceName: string = '';
 
-  constructor(private route: ActivatedRoute, private translate: TranslateService, private fb: FormBuilder, private contactService: ContactService) {
+  constructor(private route: ActivatedRoute, private translate: TranslateService, private fb: FormBuilder, private contactService: ContactService, private serviceService: DataService) {
     this.contactForm = this.fb.group({
       lastName: ['', [Validators.required, Validators.maxLength(255)]],
       firstName: ['', [Validators.required, Validators.maxLength(255)]],
       email: ['', [Validators.required, Validators.email, Validators.maxLength(255)]],
       tel: [''],
-      service: ['1', Validators.required],
+      service: ['', Validators.required],
       message: ['', Validators.required],
       file: null
     });
   }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe((params) => {
-      const selectedService = params['service'];
-      if (selectedService) {
-        this.contactForm.patchValue({ service: selectedService });
-      }
-    });
+      this.serviceService.getDataServices().subscribe((services: any[]) => {
+          this.services = services;
+      });
+      this.route.queryParams.subscribe((params) => {
+          const selectedService = params['service'];
+          if (selectedService) {
+              this.contactForm.patchValue({ service: selectedService });
+          }
+      });
   }
   
   onFileChange(event: any): void {
@@ -144,7 +151,7 @@ export class ContactComponent {
         service: this.contactForm.value.service,
         message: this.contactForm.value.message,
         file : null, 
-        _subject: '[Dijanov] ' + this.contactForm.value.service // Ajout du sujet ici
+        _subject: '[Dijanov] ' + this.services.find(s => s.id === Number(this.contactForm.value.service)).name // Ajout du sujet ici
       };*/
 
       //formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
@@ -158,7 +165,8 @@ export class ContactComponent {
     formData.append('tel', this.contactForm.value.tel || ''); // Champ optionnel
     formData.append('service', this.contactForm.value.service);
     formData.append('message', this.contactForm.value.message);
-    formData.append('subject', '[Dijanov] ' + this.contactForm.value.service); // Ajout du sujet ici
+    this.service = this.services.find(s => s.id === Number(this.contactForm.value.service)).name
+    formData.append('subject', '[Dijanov] ' + this.service); // Ajout du sujet ici
     
     // Ajout des fichiers s'ils existent
     if (this.selectedFiles && this.selectedFiles.length > 0) {
