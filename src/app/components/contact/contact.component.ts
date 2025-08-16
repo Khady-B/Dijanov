@@ -159,38 +159,38 @@ export class ContactComponent {
       formData.append('firstName', this.contactForm.value.firstName);
       formData.append('email', this.contactForm.value.email);
       formData.append('tel', this.contactForm.value.tel || ''); // Champs optionnel
-      formData.append('service', this.contactForm.value.service);
+      formData.append('service', this.services.find(s => s.id === Number(this.contactForm.value.service)).name);
       formData.append('message', this.contactForm.value.message);
 
       if (this.selectedFiles && this.selectedFiles.length > 0) {
         this.selectedFiles.forEach((file: File, index: number) => {
           formData.append('files[]', file); // Tableau de fichiers
         });
-      }
+      }*/
       const formData = {
         lastName: this.contactForm.value.lastName,
         firstName: this.contactForm.value.firstName,
         email: this.contactForm.value.email,
-        tel: this.contactForm.value.tel,
-        service: this.contactForm.value.service,
+        tel: this.contactForm.value.tel || '', // Champ optionnel
+        service: this.services.find(s => s.id === Number(this.contactForm.value.service)).name,
         message: this.contactForm.value.message,
-        file : null, 
-        _subject: '[Dijanov] ' + this.services.find(s => s.id === Number(this.contactForm.value.service)).name // Ajout du sujet ici
-      };*/
+                _subject: '[Dijanov] ' + this.services.find(s => s.id === Number(this.contactForm.value.service)).name
+        // files: [] as File[], // Tableau de fichiers
+      };
 
       //formData.append('subject', '[Dijanov] ' + this.contactForm.value.service);
 
-    const formData = new FormData();
+    // const formData = new FormData();
     
     // Ajout des données de formulaire
-    formData.append('lastName', this.contactForm.value.lastName);
-    formData.append('firstName', this.contactForm.value.firstName);
-    formData.append('email', this.contactForm.value.email);
-    formData.append('tel', this.contactForm.value.tel || ''); // Champ optionnel
-    formData.append('service', this.contactForm.value.service);
-    formData.append('message', this.contactForm.value.message);
-    this.service = this.services.find(s => s.id === Number(this.contactForm.value.service)).name
-    formData.append('subject', '[Dijanov] ' + this.service); // Ajout du sujet ici
+    // formData.append('lastName', this.contactForm.value.lastName);
+    // formData.append('firstName', this.contactForm.value.firstName);
+    // formData.append('email', this.contactForm.value.email);
+    // formData.append('tel', this.contactForm.value.tel || ''); // Champ optionnel
+    // formData.append('service', this.contactForm.value.service);
+    // formData.append('message', this.contactForm.value.message);
+    // this.service = this.services.find(s => s.id === Number(this.contactForm.value.service)).name
+    // formData.append('subject', '[Dijanov] ' + this.service); // Ajout du sujet ici
     
     // Ajout des fichiers s'ils existent
     // if (this.selectedFiles && this.selectedFiles.length > 0) {
@@ -202,14 +202,14 @@ export class ContactComponent {
     // Envoi du formulaire via le service
     this.contactService.sendContactForm(formData).subscribe(
       response => {
-        this.successMessage = this.translate.instant('Message_succès');
-        this.contactForm.reset();
-        // this.selectedFiles = null;
-      },
-      error => {
-        this.errorMessage = this.translate.instant('Message_erreur');
-      }
-    );
+          this.successMessage = this.translate.instant('Message_succès');
+          this.contactForm.reset();
+          // this.selectedFiles = null;
+        },
+        error => {
+          this.errorMessage = this.translate.instant('Message_erreur');
+        }
+      );
   }
 
   
