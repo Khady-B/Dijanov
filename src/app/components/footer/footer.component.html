@@ -29,6 +29,11 @@
     </div>
     <app-legal-modal #legalModal *ngIf="isModalOpen" [selectedSection]="selectedSection" (click)="closeLegalModal($event)" (close)="closeLegalModal()">
     </app-legal-modal>
+    <br/>
+    <br/>
+    <p class="footer-text">
+        &copy; {{ currentYear }} Dijanov. {{'Footer' | translate}}
+    </p>
     <!-- <div class="footer-content"> -->
     <!-- <section class="footer-section"> -->
     <!-- <a (click)="openLegalModal()">Mentions légales</a> -->

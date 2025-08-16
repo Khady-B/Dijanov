@@ -146,5 +146,6 @@
 
     "Message_invalid": "Type de fichier non valide. Veuillez sélectionner un fichier valide.",
     "Message_succès": "Votre message a été envoyé avec succès.",
-    "Message_erreur": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    "Message_erreur": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "Footer" : "Tous droits réservés."
 }

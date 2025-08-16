@@ -144,5 +144,6 @@
 
     "Message_invalid": "nvalid file type. Please select a valid file.",
     "Message_succès": "Your message has been sent successfully.",
-    "Message_erreur": "An error has occurred. Please try again later."
+    "Message_erreur": "An error has occurred. Please try again later.",
+    "Footer": "All rights reserved."
 }

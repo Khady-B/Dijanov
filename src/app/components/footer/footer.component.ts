@@ -9,6 +9,7 @@ export class FooterComponent {
   @ViewChild('legalModal', { static: false }) legalModal!: ElementRef;
   isModalOpen = false;
   selectedSection: string | null = null;
+  currentYear: number = new Date().getFullYear();
 
   openLegalModal(section: string): void {
     this.selectedSection = section;
