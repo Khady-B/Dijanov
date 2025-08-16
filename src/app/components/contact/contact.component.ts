@@ -17,8 +17,9 @@ export class ContactComponent {
   errorMessage: string = '';
   // selectedFiles: File[] | null = null;
   services: any[] = [];
-  service: any;
-  serviceName: string = '';
+  service: string = '';
+  mailtoLink: string = 'mailto:contact@dijanov.com';
+
 
   constructor(private route: ActivatedRoute, private translate: TranslateService, private fb: FormBuilder, private contactService: ContactService, private serviceService: DataService) {
     this.contactForm = this.fb.group({
@@ -35,6 +36,8 @@ export class ContactComponent {
   ngOnInit(): void {
       this.serviceService.getDataServices().subscribe((services: any[]) => {
           this.services = services;
+          this.service = this.contactForm.getRawValue().service ? this.translate.instant(this.services.find(s => s.id === Number(this.contactForm.getRawValue().service)).title) : '';
+          this.updateMailtoLink(this.service);
       });
       this.route.queryParams.subscribe((params) => {
           const selectedService = params['service'];
@@ -43,6 +46,21 @@ export class ContactComponent {
           }
       });
   }
+
+  ngOnChanges(): void {
+    this.service = this.contactForm.getRawValue().service ? this.translate.instant(this.services.find(s => s.id === Number(this.contactForm.getRawValue().service)).title) : '';
+    this.updateMailtoLink(this.service);      
+  }
+
+  updateMailtoLink(serviceName:string): void {
+    const subject = serviceName != '' ? serviceName : 'Contact';
+    this.mailtoLink = `mailto:contact@dijanov.com?subject=${encodeURIComponent(subject)}`;
+  }
+
+  onServiceChange(event: any): void {
+    this.ngOnChanges();
+  }
+
   
   // onFileChange(event: any): void {
   //   const input = event.target as HTMLInputElement;
@@ -93,9 +111,9 @@ export class ContactComponent {
   //         removeButton.addEventListener("click", () => this.removeFile(file));
 
   //       if (this.validFileType(file)) {
-  //         para.textContent = `${file.name} (${this.returnFileSize(file.size)})`;
+  //         para.textContent = `${file.title} (${this.returnFileSize(file.size)})`;
   //       } else {
-  //         para.textContent = `${file.name}: ${this.translate.instant('Message_invalid')}`;
+  //         para.textContent = `${file.title}: ${this.translate.instant('Message_invalid')}`;
   //       }
 
   //       listItem.appendChild(para);
@@ -135,8 +153,8 @@ export class ContactComponent {
   //       reader.onload = (event: ProgressEvent<FileReader>) => {
   //         const result = event.target?.result;
   //         if (result) {
-  //           localStorage.setItem(file.name, result.toString());
-  //           console.log(`Fichier ${file.name} enregistré localement.`);
+  //           localStorage.setItem(file.title, result.toString());
+  //           console.log(`Fichier ${file.title} enregistré localement.`);
   //         }
   //       };
   //       reader.readAsDataURL(file); // Stocke le fichier encodé en Base64
@@ -159,7 +177,7 @@ export class ContactComponent {
       formData.append('firstName', this.contactForm.value.firstName);
       formData.append('email', this.contactForm.value.email);
       formData.append('tel', this.contactForm.value.tel || ''); // Champs optionnel
-      formData.append('service', this.services.find(s => s.id === Number(this.contactForm.value.service)).name);
+      formData.append('service', this.service);
       formData.append('message', this.contactForm.value.message);
 
       if (this.selectedFiles && this.selectedFiles.length > 0) {
@@ -172,9 +190,10 @@ export class ContactComponent {
         firstName: this.contactForm.value.firstName,
         email: this.contactForm.value.email,
         tel: this.contactForm.value.tel || '', // Champ optionnel
-        service: this.services.find(s => s.id === Number(this.contactForm.value.service)).name,
+        service: this.service,
         message: this.contactForm.value.message,
-                _subject: '[Dijanov] ' + this.services.find(s => s.id === Number(this.contactForm.value.service)).name
+        subject: '[Dijanov] ' + this.service
+        // _subject: '[Dijanov] ' + this.services.find(s => s.id === Number(this.contactForm.value.service)).title
         // files: [] as File[], // Tableau de fichiers
       };
 
@@ -189,7 +208,6 @@ export class ContactComponent {
     // formData.append('tel', this.contactForm.value.tel || ''); // Champ optionnel
     // formData.append('service', this.contactForm.value.service);
     // formData.append('message', this.contactForm.value.message);
-    // this.service = this.services.find(s => s.id === Number(this.contactForm.value.service)).name
     // formData.append('subject', '[Dijanov] ' + this.service); // Ajout du sujet ici
     
     // Ajout des fichiers s'ils existent

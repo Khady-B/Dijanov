@@ -9,6 +9,8 @@ export class LegalModalComponent {
   @Input() selectedSection: string | null = null;
   @Output() close = new EventEmitter<void>();
   @ViewChild('modalContent', { static: true }) modalContent!: ElementRef;
+  mailtoLink = `mailto:contact@dijanov.com?subject=${encodeURIComponent('Contact')}`;
+
 
   constructor(private elementRef: ElementRef) {}
 

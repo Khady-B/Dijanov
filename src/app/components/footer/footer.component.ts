@@ -10,6 +10,7 @@ export class FooterComponent {
   isModalOpen = false;
   selectedSection: string | null = null;
   currentYear: number = new Date().getFullYear();
+  mailtoLink = `mailto:contact@dijanov.com?subject=${encodeURIComponent('Contact')}`;
 
   openLegalModal(section: string): void {
     this.selectedSection = section;
@@ -23,6 +24,8 @@ export class FooterComponent {
       event.stopPropagation(); // Empêche la propagation du clic à la modale
     }
   }
+
+
   // openLegalModal(): void {
   //   this.isModalOpen = true;
   // }
